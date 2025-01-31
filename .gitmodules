@@ -1,0 +1,3 @@
+[submodule "prisma"]
+	path = prisma
+	url = git@github.com:Jin-Personal-Site/prisma.git

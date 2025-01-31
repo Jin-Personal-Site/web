@@ -15,6 +15,7 @@
 
 # next.js
 /.next/
+/.pnpm-store
 /out/
 
 # production
