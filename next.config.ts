@@ -1,8 +1,13 @@
 import type { NextConfig } from 'next'
 
-console.log(process.env.DATABASE_URL)
 const nextConfig: NextConfig = {
 	output: 'export',
+	typescript: {
+		tsconfigPath:
+			process.env.NODE_ENV === 'production'
+				? './tsconfig.build.json'
+				: './tsconfig.json',
+	},
 	images: {
 		remotePatterns: [
 			{
