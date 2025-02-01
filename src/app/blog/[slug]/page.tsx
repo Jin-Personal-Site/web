@@ -7,6 +7,10 @@ type Params = {
 export async function generateStaticParams(): Promise<Params[]> {
 	const posts = await allPostIds()
 
+	if (!posts.length) {
+		return [{ slug: 'test' }]
+	}
+
 	return [
 		...posts.map((post) => ({
 			slug: post.slug,
