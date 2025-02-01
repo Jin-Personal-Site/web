@@ -1,0 +1,75 @@
+name: Deploy NextJS with SSM and RDS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Bun
+        run: npm install -g bun
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Trust all dependencies
+        run: bun pm trust --all
+
+      - name: Generate Prisma schema types
+        run: bun db:generate
+
+      - name: Start SSM and forward RDS to localhost:5432
+        run: |
+          aws ssm start-session \
+            --target i-015985c2fd98eedf6 \
+            --document-name AWS-StartPortForwardingSessionToRemoteHost \
+            --parameters '{"host":["personal-site.cju86mq0iiiw.ap-southeast-1.rds.amazonaws.com"],"portNumber":["5432"], "localPortNumber":["5432"]}' > ssm.log 2>&1 &
+          echo $! > ssm_pid.txt
+          # Wait for port forwarding to be established
+          sleep 5
+
+      - name: Verify PostgreSQL connection
+        run: |
+          # Install postgresql-client
+          sudo apt-get update && sudo apt-get install -y postgresql-client
+          # Try to connect to PostgreSQL (retry up to 5 times)
+          for i in {1..5}; do
+            if PGPASSWORD=postgres psql -h localhost -U postgres -d personal_site -p 5432 -c '\l' > /dev/null 2>&1; then
+              echo "PostgreSQL connection successful!"
+              exit 0
+            fi
+            echo "Attempt $i: Waiting for PostgreSQL connection..."
+            sleep 5
+          done
+          echo "Failed to connect to PostgreSQL" && exit 1
+
+      - name: Build NextJS app
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/personal_site
+        run: bun run build
+
+      - name: Stop SSM session
+        run: |
+          kill $(cat ssm_pid.txt) || echo "SSM session already stopped"
+          ls -al ./out
+
