@@ -1,0 +1,11 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"outDir": "./public/workers",
+		"module": "Preserve",
+		"noEmit": false,
+		"sourceMap": true,
+		"removeComments": true
+	},
+	"include": ["src/**/*.worker.ts"]
+}

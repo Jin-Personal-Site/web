@@ -41,27 +41,12 @@ jobs:
       - name: Start SSM and forward RDS to localhost:5432
         run: |
           aws ssm start-session \
-            --target i-015985c2fd98eedf6 \
+            --target ${{ vars.SSM_INSTANCE_ID }} \
             --document-name AWS-StartPortForwardingSessionToRemoteHost \
-            --parameters '{"host":["personal-site.cju86mq0iiiw.ap-southeast-1.rds.amazonaws.com"],"portNumber":["5432"], "localPortNumber":["5432"]}' > ssm.log 2>&1 &
+            --parameters '{"host":["${{ vars.RDS_URL }}"],"portNumber":["${{ vars.RDS_PORT }}"], "localPortNumber":["5432"]}' > ssm.log 2>&1 &
           echo $! > ssm_pid.txt
           # Wait for port forwarding to be established
           sleep 5
-
-      - name: Verify PostgreSQL connection
-        run: |
-          # Install postgresql-client
-          sudo apt-get update && sudo apt-get install -y postgresql-client
-          # Try to connect to PostgreSQL (retry up to 5 times)
-          for i in {1..5}; do
-            if PGPASSWORD=postgres psql -h localhost -U postgres -d personal_site -p 5432 -c '\l' > /dev/null 2>&1; then
-              echo "PostgreSQL connection successful!"
-              exit 0
-            fi
-            echo "Attempt $i: Waiting for PostgreSQL connection..."
-            sleep 5
-          done
-          echo "Failed to connect to PostgreSQL" && exit 1
 
       - name: Build NextJS app
         env:
@@ -70,6 +55,14 @@ jobs:
 
       - name: Stop SSM session
         run: |
-          kill $(cat ssm_pid.txt) || echo "SSM session already stopped"
-          ls -al ./out
+          session_id=$(aws ssm describe-sessions --state Active --query "Sessions[?Target=='${{ vars.SSM_INSTANCE_ID }}'].SessionId" --output text)
+          if [ ! -z "$session_id" ]; then
+            for session in $session_id; do
+              aws ssm terminate-session --session-id "$session"
+            done
+          fi
+
+      - name: Upload built output to S3
+        run: |
+          aws s3 sync ./out s3://jin-personal-site/web --delete
 

@@ -1,0 +1,14 @@
+@layer components {
+	.home-section {
+		@apply relative mb-60 min-h-svh p-6;
+	}
+	.transition-base {
+		@apply transition-all duration-300;
+	}
+	.flex-center {
+		@apply flex items-center justify-center;
+	}
+	.flex-col-center {
+		@apply flex flex-col items-center justify-center;
+	}
+}

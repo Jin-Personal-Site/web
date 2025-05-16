@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+YELLOW_BOLD="\033[1;33m"
+GRAY_ITALIC="\033[3;30m"
+PURPLE_BOLD="\033[1;35m"
+RESET="\033[0m"
+
+echo "\n${YELLOW_BOLD}🐶 HUSKY HOOK 🐶${RESET}\n"
+
+COMMIT_TYPE=$(sh "$(dirname -- "$0")/utils/commit-type")
+
+if [[ $COMMIT_TYPE != "" ]]; then
+  echo "${GRAY_ITALIC}Hooks are ignored by ${PURPLE_BOLD}$COMMIT_TYPE${GRAY_ITALIC} commit${RESET}\n"
+  exit 0
+fi
+
+echo "⭐ Code linting..."
+
+bun lint-staged

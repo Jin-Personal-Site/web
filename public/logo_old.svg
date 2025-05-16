@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="142.57mm" height="119.32mm" version="1.1" viewBox="0 0 142.57 119.32" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>Vinh Nguyen (Ethan) - Software Engineer - Keycap Logo</title>
+ <g id="main-layer" transform="translate(-28.847 -52.177)">
+  <g>
+   <path id="shape" transform="matrix(-1.0422 .33987 -.33293 -1.0639 199.02 152.07)" d="m102.19 109.01-31.413 2.8132a28.5 28.5 17.716 0 1-21.07-6.7309l-23.964-20.504a17.117 17.117 65.599 0 1-5.9881-13.2l0.48832-43.123a9.7279 9.7279 131.79 0 1 8.5318-9.544l52.687-6.5242a21.667 21.667 17.716 0 1 17.298 5.5259l39.147 35.861a9.7279 9.7279 83.637 0 1 1.4187 12.723l-24.602 35.42a17.117 17.117 149.83 0 1-12.532 7.2841z" fill="#333" stroke="#fff" stroke-width="4.4507"/>
+   <g stroke="#333" stroke-width="4">
+    <path transform="matrix(1 0 0 -1 76.829 130.68)" d="m59.796 54.277-29.251 12.299a19.027 19.027 0 0 1-14.749 0l-29.251-12.299a3.3636 3.3636 90 0 1 0-6.2014l29.251-12.299a19.027 19.027 0 0 1 14.749 0l29.251 12.299a3.3636 3.3636 90 0 1 0 6.2014z" fill="#fff"/>
+    <path id="left-face" d="m92.618 158.58-48.779-22.593a6.839 6.839 66.113 0 1-3.6527-8.2479l12.578-40.202a5.3939 5.3939 155.42 0 1 7.2955-3.3372l30.588 13.278a12.21 12.21 56.696 0 1 7.3484 11.185l0.05797 46.438a3.8281 3.8281 147.39 0 1-5.4369 3.4784z" fill="#444"/>
+    <path id="right-face" d="m107.07 158.85 49.297-22.63a6.8156 6.8156 113.98 0 0 3.6612-8.2294l-12.578-40.202a5.4462 5.4462 24.856 0 0-7.3182-3.3901l-31.07 13.134a12.083 12.083 123.58 0 0-7.3786 11.115l-0.058 46.705a3.8424 3.8424 32.707 0 0 5.4454 3.4968z" fill="#aaa"/>
+   </g>
+  </g>
+  <g id="key-wrapper" transform="matrix(1.2383 -.55764 1.5511 .81321 -206.37 134.58)">
+   <path id="key-char" transform="matrix(1.3984 .033938 .096043 1.1225 -54.555 -13.188)" d="m169.6 50.323v0.30592c-0.39687 0.07166-0.69728 0.19844-0.90123 0.38034-0.29215 0.2701-0.55122 0.6835-0.77721 1.2402l-3.9109 9.5415h-0.30592l-4.2002-9.6655c-0.21497-0.49609-0.36656-0.79926-0.45476-0.9095-0.1378-0.17088-0.30867-0.30317-0.51262-0.39687-0.19844-0.09922-0.46854-0.16261-0.81029-0.19017v-0.30592h4.5806v0.30592c-0.51814 0.04961-0.85438 0.1378-1.0087 0.26458-0.15434 0.12678-0.23151 0.28939-0.23151 0.48782 0 0.27561 0.12678 0.70555 0.38034 1.2898l2.8525 6.5732 2.6458-6.4905c0.25907-0.63941 0.3886-1.0831 0.3886-1.3312 0-0.15985-0.0799-0.31144-0.23977-0.45475-0.15985-0.14883-0.42995-0.25356-0.81029-0.31419-0.0275-0.0055-0.0744-0.0138-0.14056-0.0248v-0.30593z" fill="#333" stroke="#333" stroke-width="1.46" aria-label="V"/>
+  </g>
+ </g>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
+    <dc:date>2025/04/13</dc:date>
+    <dc:language>English, Vietnamese</dc:language>
+    <dc:description>A drawing of a keycap with a character above, which represents to the author's first name.</dc:description>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Vinh Nguyen (Ethan)</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:subject>
+     <rdf:Bag>
+      <rdf:li>Vinh Nguyen</rdf:li>
+      <rdf:li>Software Engineer</rdf:li>
+      <rdf:li>Keycap Logo</rdf:li>
+      <rdf:li>Keycap Icon</rdf:li>
+     </rdf:Bag>
+    </dc:subject>
+    <dc:title>Vinh Nguyen (Ethan) - Software Engineer - Keycap Logo</dc:title>
+   </cc:Work>
+   <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike"/>
+   </cc:License>
+  </rdf:RDF>
+ </metadata>
+</svg>

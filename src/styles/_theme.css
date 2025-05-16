@@ -1,0 +1,177 @@
+:root {
+	/* COLOR PALETTE - LIGHT THEME */
+	/* Surface backgrounds */
+	--tw-color-surface-page: #ffffff; /* page background */
+	--tw-color-surface-card: #f7f7f7; /* card/container */
+	--tw-color-surface-modal: #f5f5f5; /* modal/background overlay */
+
+	/* Text colors */
+	--tw-color-text-base: #0d0d0d; /* primary text */
+	--tw-color-text-muted: #666666; /* secondary text / hints */
+
+	/* Accent colors */
+	--tw-color-primary: #4c5fd5; /* primary buttons, links, highlights */
+	--tw-color-highlight: #ffe699; /* secondary highlight color */
+
+	/* Interactive elements */
+	--tw-color-button-primary: var(--tw-color-primary);
+	--tw-color-button-primary-hover: #3b4fb7; /* darker accent on hover */
+	--tw-color-button-primary-disabled: #b0b0b0; /* grayed-out */
+
+	--tw-color-button-secondary: #e0e0e0; /* neutral button bg */
+	--tw-color-button-secondary-hover: #cccccc;
+	--tw-color-button-secondary-disabled: #f5f5f5;
+
+	--tw-color-button-link: var(--tw-color-primary);
+	--tw-color-button-link-hover: #3b4fb7;
+
+	/* Borders and focus outlines */
+	--tw-color-border: #e0e0e0;
+	--tw-color-focus-outline: #4c5fd5;
+
+	/* Scrollbar (thumb, track) */
+	--tw-color-scrollbar-thumb: #cccccc;
+	--tw-color-scrollbar-track: #f0f0f0;
+
+	/* Gradient highlights (e.g. for text) */
+	--tw-color-gradient-start: #4c5fd5;
+	--tw-color-gradient-end: #ffe699;
+
+	/* Light theme shadow variables */
+	--tw-shadow-depth-base: 0 2px 4px rgba(0, 0, 0, 0.1);
+	--tw-shadow-depth-strong: 0 4px 8px rgba(0, 0, 0, 0.15);
+	--tw-shadow-glow-base: 0 0 4px rgba(0, 0, 0, 0.05);
+	--tw-shadow-glow-primary: 0 0 8px rgba(76, 95, 213, 0.3);
+	--tw-shadow-glow-highlight: 0 0 8px rgba(255, 230, 153, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* COLOR PALETTE - DARK THEME */
+		/* Dark surfaces */
+		--tw-color-surface-page: #0d0d0d;
+		--tw-color-surface-card: #1a1a1a;
+		--tw-color-surface-modal: #1a1a1a;
+
+		/* Light text */
+		--tw-color-text-base: #f3f3f3;
+		--tw-color-text-muted: #aaaaaa;
+
+		/* Same accent colors (may adjust brightness) */
+		--tw-color-primary: #4c5fd5;
+		--tw-color-highlight: #ffe699;
+
+		/* Interactive elements */
+		--tw-color-button-primary: var(--tw-color-primary);
+		--tw-color-button-primary-hover: #5a6fe1; /* lighter accent on hover */
+		--tw-color-button-primary-disabled: #555555;
+
+		--tw-color-button-secondary: #333333;
+		--tw-color-button-secondary-hover: #444444;
+		--tw-color-button-secondary-disabled: #222222;
+
+		--tw-color-button-link: var(--tw-color-primary);
+		--tw-color-button-link-hover: #5a6fe1;
+
+		/* Borders and focus outlines */
+		--tw-color-border: #333333;
+		--tw-color-focus-outline: #4c5fd5;
+
+		/* Scrollbar (thumb, track) */
+		--tw-color-scrollbar-thumb: #444444;
+		--tw-color-scrollbar-track: #222222;
+
+		/* Gradient highlights (e.g. for text) */
+		--tw-color-gradient-start: #4c5fd5;
+		--tw-color-gradient-end: #ffe699;
+
+		/* Dark theme shadow overrides */
+		--tw-shadow-depth-base: 0 2px 4px rgba(255, 255, 255, 0.1);
+		--tw-shadow-depth-strong: 0 4px 8px rgba(255, 255, 255, 0.15);
+		--tw-shadow-glow-base: 0 0 4px rgba(255, 255, 255, 0.05);
+		--tw-shadow-glow-primary: 0 0 8px rgba(76, 95, 213, 0.5);
+		--tw-shadow-glow-highlight: 0 0 8px rgba(255, 230, 153, 0.5);
+	}
+}
+
+@theme inline {
+	/* Font family */
+	--font-sans: var(--font-sans);
+	--font-serif: var(--font-serif);
+
+	/* Breakpoints */
+	--breakpoint-sm: 40rem;
+	--breakpoint-md: 48rem;
+	--breakpoint-lg: 64rem;
+	--breakpoint-xl: 80rem;
+	--breakpoint-2xl: 96rem;
+
+	/* Animations */
+	--animate-slide-left: slide-left 2s ease-in-out infinite;
+
+	@keyframes slide-left {
+		0% {
+			transform: translateX(0);
+		}
+		15% {
+			transform: translateX(0.25rem);
+		}
+		30% {
+			transform: translateX(0);
+		}
+		45% {
+			transform: translateX(0.25rem);
+		}
+		60% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+
+	/* COLOR PALETTE - LIGHT THEME */
+	/* Surface backgrounds */
+	--color-surface-page: var(--tw-color-surface-page);
+	--color-surface-card: var(--tw-color-surface-card);
+	--color-surface-modal: var(--tw-color-surface-modal);
+
+	/* Text colors */
+	--color-text-base: var(--tw-color-text-base);
+	--color-text-muted: var(--tw-color-text-muted);
+
+	/* Accent colors */
+	--color-primary: var(--tw-color-primary);
+	--color-highlight: var(--tw-color-highlight);
+
+	/* Interactive elements */
+	--color-button-primary: var(--tw-color-button-primary);
+	--color-button-primary-hover: var(--tw-color-button-primary-hover);
+	--color-button-primary-disabled: var(--tw-color-button-primary-disabled);
+
+	--color-button-secondary: var(--tw-color-button-secondary);
+	--color-button-secondary-hover: var(--tw-color-button-secondary-hover);
+	--color-button-secondary-disabled: var(--tw-color-button-secondary-disabled);
+
+	--color-button-link: var(--tw-color-button-link);
+	--color-button-link-hover: var(--tw-color-button-link-hover);
+
+	/* Borders and focus outlines */
+	--color-border: var(--tw-color-border);
+	--color-focus-outline: var(--tw-color-focus-outline);
+
+	/* Scrollbar (thumb, track) */
+	--color-scrollbar-thumb: var(--tw-color-scrollbar-thumb);
+	--color-scrollbar-track: var(--tw-color-scrollbar-track);
+
+	/* Gradient highlights (e.g. for text) */
+	--color-gradient-start: var(--tw-color-gradient-start);
+	--color-gradient-end: var(--tw-color-gradient-end);
+
+	/* Shadow */
+	--shadow-depth-base: var(--tw-shadow-depth-base);
+	--shadow-depth-strong: var(--tw-shadow-depth-strong);
+	--shadow-glow-base: var(--tw-shadow-glow-base);
+	--shadow-glow-primary: var(--tw-shadow-glow-primary);
+	--shadow-glow-highlight: var(--tw-shadow-glow-highlight);
+}

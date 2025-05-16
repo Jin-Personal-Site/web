@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
 				: './tsconfig.json',
 	},
 	images: {
+		unoptimized: true,
 		remotePatterns: [
 			{
 				protocol: 'http',
@@ -17,9 +18,14 @@ const nextConfig: NextConfig = {
 				pathname: '/jin-personal-site/**',
 				search: '',
 			},
+			{
+				protocol: 'https',
+				hostname: 'picsum.photos',
+			},
+			// new URL('https://picsum.photos/**')
 		],
+		// domains: ['picsum.photos'],
 	},
 }
 
 export default nextConfig
-

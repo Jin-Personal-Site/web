@@ -1,0 +1,26 @@
+#!/usr/bin/env sh
+# Colors for output texts
+SUCCESS_BOLD='\033[1;32m'  # green
+INFO_BOLD='\033[1;34m'     # blue
+ERROR_BOLD='\033[1;31m'    # red
+NORMAL_BOLD='\033[1m'    # red
+RESET='\033[0m'
+
+COMMIT_TYPE=$(sh "$(dirname -- "$0")/utils/commit-type")
+
+if [[ $COMMIT_TYPE != "" ]]; then
+  exit 0
+fi
+
+# Get COMMIT_MSG file from param
+EDIT_MSG_FILE="$1"
+
+# --------------
+# Lint commit message with commitlint
+# --------------
+echo "\n⭐ Message linting..."
+
+# Can't use `commitlint --edit $1` because commitlint execute incorrectly
+echo $(cat $EDIT_MSG_FILE) | (npx -- commitlint --verbose --config .commitlintrc.js) || (echo "${ERROR_BOLD}🚫 COMMIT FAILED! 🚫${RESET}\n" && exit 1)
+
+echo "\n${SUCCESS_BOLD}✅ COMMIT PASSED! ✅${RESET}\n"

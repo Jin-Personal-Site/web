@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="142.57mm" height="119.32mm" version="1.1" viewBox="0 0 142.57 119.32" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>Vinh Nguyen (Ethan) - Software Engineer - Keycap Logo</title>
+ <g id="main-layer" transform="translate(-28.847 -52.177)">
+  <g>
+   <path id="shape" transform="matrix(-1.0422 .33987 -.33293 -1.0639 199.02 152.07)" d="m102.18 107.66c-10.86-0.68276-21.561-0.489-31.887 1.7626-6.4681 1.4104-15.067-0.52247-19.687-5.2734-7.611-7.8261-15.501-15.021-24.076-20.666-3.6889-2.4287-6.83-7.674-6.78-12.092l0.48832-43.123a9.7279 9.7279 131.79 0 1 8.5318-9.544l52.687-6.5242a21.667 21.667 17.716 0 1 17.298 5.5259l39.147 35.861a9.7279 9.7279 83.637 0 1 1.4187 12.723l-24.602 35.42c-2.5205 3.6288-8.1285 6.2086-12.538 5.9314z" fill="#333" stroke="#fff" stroke-width="4.4507"/>
+   <g stroke="#333" stroke-width="4">
+    <path transform="matrix(1 0 0 -1 76.829 130.68)" d="m59.514 53.49c-10.096 3.3068-19.835 7.5057-29.299 12.394-3.9252 2.0278-9.8775 1.579-13.663-0.69488-8.731-5.2444-18.159-8.5156-27.752-11.316-5.3016-1.5473-5.7748-4.9841-0.86855-7.5186 8.9217-4.6087 18.619-8.7002 29.474-12.02 3.1687-0.96915 8.457-1.817 11.763-1.6089 12.592 0.79298 23.015 5.8975 32.018 13.145 3.4405 2.7696 2.5265 6.2433-1.672 7.6184z" fill="#fff"/>
+    <path id="left-face" d="m92.618 158.58-48.779-22.593a6.839 6.839 66.113 0 1-3.6527-8.2479l12.578-40.202c0.98951-3.1625 4.14-4.4215 7.0653-2.8647 9.9466 5.2932 20.056 10.045 30.518 13.618 4.1805 1.4279 7.6435 5.9541 7.649 10.372l0.05797 46.438a3.8281 3.8281 147.39 0 1-5.4369 3.4784z" fill="#444"/>
+    <path id="right-face" d="m107.07 158.85 49.297-22.63a6.8156 6.8156 113.98 0 0 3.6612-8.2294l-12.578-40.202c-0.98951-3.1625-3.9329-4.1042-6.5666-2.0932-7.4461 5.6859-15.523 11.348-31.255 13.963-4.357 0.72418-7.9403 4.5704-7.9458 8.9887l-0.058 46.705a3.8424 3.8424 32.707 0 0 5.4454 3.4968z" fill="#aaa"/>
+   </g>
+  </g>
+  <g id="key-wrapper" transform="matrix(1.2383 -.55764 1.5511 .81321 -206.37 134.58)">
+   <path id="key-char" transform="matrix(1.3984 .033938 .096043 1.1225 -56.555 -11.084)" d="m169.02 50.352 0.0259 0.30488c-0.38206 0.10096-0.66306 0.24961-0.84603 0.44594-0.26136 0.29077-0.4793 0.72224-0.65692 1.2943-1.027 3.2694-2.1343 6.5361-3.5176 9.7412-0.1134 0.0018-0.22704 0.0033-0.34091 0.0044-0.91888-1.8285-1.7645-3.6755-2.4927-5.5405-0.54891-1.4059-1.031-2.822-1.4274-4.248-0.14211-0.51318-0.23444-0.82349-0.2976-0.94358-0.0969-0.18262-0.22279-0.33069-0.3773-0.4459-0.14962-0.1203-0.35812-0.21379-0.6254-0.28747l0.0468-0.30239c1.195 0.20565 2.4564 0.29281 3.7772 0.30548l-5e-3 0.30557c-0.45252 0.04503-0.74363 0.12186-0.88244 0.24374-0.13815 0.12131-0.21296 0.28047-0.2223 0.47822-0.0129 0.27245 0.0763 0.71086 0.28513 1.2997 0.78568 2.2157 1.7493 4.4083 2.8159 6.5767 0.87894-2.1867 1.6435-4.3988 2.3546-6.6178 0.20834-0.65476 0.30103-1.109 0.28395-1.3559-0.0111-0.15991-0.098-0.30602-0.25918-0.43936-0.16168-0.13895-0.42323-0.2267-0.78196-0.26652-0.0261-4e-3 -0.0701-0.0097-0.13243-0.01721l-0.0169-0.30609c1.068-0.0613 2.1664-0.14404 3.2923-0.2293z" fill="#333" stroke="#333" stroke-width="1.46" aria-label="V"/>
+  </g>
+ </g>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
+    <dc:date>2025/04/13</dc:date>
+    <dc:language>English, Vietnamese</dc:language>
+    <dc:description>A drawing of a keycap with a character above, which represents to the author's first name.</dc:description>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Vinh Nguyen (Ethan)</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:subject>
+     <rdf:Bag>
+      <rdf:li>Vinh Nguyen</rdf:li>
+      <rdf:li>Software Engineer</rdf:li>
+      <rdf:li>Keycap Logo</rdf:li>
+      <rdf:li>Keycap Icon</rdf:li>
+     </rdf:Bag>
+    </dc:subject>
+    <dc:title>Vinh Nguyen (Ethan) - Software Engineer - Keycap Logo</dc:title>
+   </cc:Work>
+   <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike"/>
+   </cc:License>
+  </rdf:RDF>
+ </metadata>
+</svg>

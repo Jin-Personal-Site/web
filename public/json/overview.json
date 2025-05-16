@@ -1,0 +1,31 @@
+{
+	"startWorkingDate": "2022-08-02",
+	"completedProjects": 4,
+	"socials": [
+		{
+			"key": "github",
+			"name": "Github",
+			"url": "https://github.com/quanqvinh"
+		},
+		{
+			"key": "linkedin",
+			"name": "LinkedIn",
+			"url": "https://linkedin.com/in/quanqvinh"
+		},
+		{
+			"key": "gmail",
+			"name": "Gmail",
+			"url": "mailto:nguyenquanqvinh@gmail.com"
+		},
+		{
+			"key": "telegram",
+			"name": "Telegram",
+			"url": "https://t.me/quanqvinh"
+		},
+		{
+			"key": "messenger",
+			"name": "Messenger",
+			"url": "https://www.facebook.com/nquanqvinh"
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"*.{ts,tsx,js,jsx}": [
+		"eslint --fix --cache",
+		"prettier --write --list-different --ignore-unknown"
+	],
+	"*.{css,json}": ["prettier --write --list-different --ignore-unknown"],
+	"package.json": "sort-package-json"
+}
