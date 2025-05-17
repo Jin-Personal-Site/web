@@ -1,6 +1,7 @@
-import BaseButton from '@/components/common/buttons/BaseButton'
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
+
+import BaseButton from '@/components/common/buttons/BaseButton'
 
 export default function ContactSection() {
 	return (

@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
+
 import PictureFrame from '.'
 
 const meta: Meta<typeof PictureFrame> = {
