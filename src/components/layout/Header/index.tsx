@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import React from 'react'
 import { FiCommand } from 'react-icons/fi'
 import { tv } from 'tailwind-variants'
 
 import pageLogo from '@/../public/images/logo.svg'
-import React from 'react'
 
 const headerHoverEffect = tv({
 	base: 'transition-base cursor-pointer hover:scale-110 hover:drop-shadow-[0_0_5px_var(--color-text-base)] ',
@@ -19,7 +19,7 @@ export default function Header() {
 						<Image
 							src={pageLogo}
 							alt=''
-							height={42}
+							height={40}
 							className={`${headerHoverEffect()}`}
 							loading='eager'
 							priority={true}
@@ -31,7 +31,7 @@ export default function Header() {
 						aria-label='Menu'
 						title='Toggle Menu'
 					>
-						<FiCommand size={24} />
+						<FiCommand size={22} />
 					</button>
 				</div>
 			</header>

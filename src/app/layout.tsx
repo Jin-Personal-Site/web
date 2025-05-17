@@ -1,11 +1,10 @@
-import '@/styles/global.css'
-
 import { Viewport } from 'next'
 import { EB_Garamond, Lexend } from 'next/font/google'
 import React from 'react'
 
 import Footer from '@/components/layout/Footer'
 import Header from '@/components/layout/Header'
+import '@/styles/global.css'
 
 export const viewport: Viewport = {
 	themeColor: [

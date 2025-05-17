@@ -1,8 +1,9 @@
-import overviewDataPromise from '@/../public/json/overview.json'
 import { IconType } from 'react-icons'
 import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { RiTelegram2Line } from 'react-icons/ri'
 import { TbBrandGmail, TbBrandMessenger } from 'react-icons/tb'
+
+import overviewDataPromise from '@/../public/json/overview.json'
 
 export const getOverviewInfo = async () => {
 	const { startWorkingDate, completedProjects } = await overviewDataPromise
