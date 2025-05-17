@@ -41,8 +41,17 @@ const featuredArticles: Article[] = [
 export default function ArticleSection() {
 	return (
 		<section id='article' className='home-section'>
-			<h2 className='text-link text-2xl font-bold'>Articles</h2>
-			<h3 className='text-3xl font-extrabold'>Featured articles</h3>
+			<h2 className='mb-20 text-shadow-[0_4px_8px_#fff1,0_8px_30px_#fff4]'>
+				<p className='text-text-muted mb-2 text-center text-xs uppercase'>
+					Desire to write and share knowledge
+				</p>
+				<p className='mb-8 text-center text-3xl font-bold'>
+					Featured{' '}
+					<span className='text-colorful inline-block -translate-x-1 font-serif text-4xl leading-12 font-bold italic'>
+						articles
+					</span>
+				</p>
+			</h2>
 			<Link
 				href='/article'
 				className='text-text-muted mt-4 mb-12 block text-base font-medium'

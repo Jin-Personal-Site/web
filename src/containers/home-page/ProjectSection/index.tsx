@@ -158,7 +158,7 @@ export default function ProjectSection() {
 				</p>
 				<p className='mb-8 text-center text-3xl font-bold'>
 					Curated{' '}
-					<span className='text-colorful inline-block -translate-x-1 font-serif text-4xl font-bold italic'>
+					<span className='text-colorful inline-block -translate-x-1 font-serif text-4xl leading-12 font-bold italic'>
 						work
 					</span>
 				</p>
