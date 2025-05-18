@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import React from 'react'
 
 import ExperienceBackground from '@/containers/about-page/ExperienceBackground'
+import GithubContribution from '@/containers/about-page/GithubContribution'
 import MyIntroduction from '@/containers/about-page/MyIntroduction'
 import PictureCarousel from '@/containers/about-page/PictureCarousel'
 
@@ -27,7 +28,7 @@ export default function Page() {
 			<MyIntroduction />
 			<PictureCarousel />
 			<ExperienceBackground />
-			<p>Github contribution</p>
+			<GithubContribution />
 			<p>Explore section</p>
 			<p>Contact section</p>
 		</div>
