@@ -11,10 +11,14 @@ const pictures: Array<{
 	imageUrl: string
 	caption: string
 }> = [
-	{ imageUrl: fakeImage(), caption: 'I code' },
-	{ imageUrl: fakeImage(), caption: 'I travel' },
-	{ imageUrl: fakeImage(), caption: 'I jog' },
-	{ imageUrl: fakeImage(), caption: 'I read' },
+	// { imageUrl: fakeImage(), caption: 'I code' },
+	// { imageUrl: fakeImage(), caption: 'I travel' },
+	// { imageUrl: fakeImage(), caption: 'I jog' },
+	// { imageUrl: fakeImage(), caption: 'I read' },
+	{ imageUrl: '/project1.png', caption: 'I code' },
+	{ imageUrl: '/project2.png', caption: 'I travel' },
+	{ imageUrl: '/project3.png', caption: 'I jog' },
+	{ imageUrl: '/project4.png', caption: 'I read' },
 ]
 
 const carouselStyle = tv({

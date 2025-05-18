@@ -8,3 +8,6 @@ export const fakeImage = () =>
 
 export const fakeParagraph = (numberOfSentences: number) =>
 	faker.lorem.paragraph(numberOfSentences)
+
+export const fakeSentence = (min = 15, max = 20) =>
+	faker.lorem.sentence({ min, max })

@@ -1,3 +1,4 @@
+import { toWords } from 'number-to-words'
 import React from 'react'
 
 import SocialMedia from '@/components/contact/SocialMedia'
@@ -12,13 +13,13 @@ export default async function MyIntroduction() {
 		<React.Fragment>
 			<React.Fragment>
 				<p className='text-text-muted mb-3'>{`
-					I'm glad to see you here. I'm Quang Vinh, a conscientious full-stack developer passionate about crafting valuable and impactful applications. With over ${workedYears} years of hands-on experience spanning both frontend and backend development, I excel at solving complex problems through clean, comprehensive solutions that consider the entire system holistically. My technical expertise encompasses Node.js, JavaScript, TypeScript, and modern frameworks including Nest.js, Vue, and React.
+					I’m glad you’re here! I’m Quang Vinh, a dedicated full-stack developer who loves building valuable, impactful applications. With over ${toWords(workedYears)} years of experience in both frontend and backend development, I solve complex problems by creating clean, comprehensive solutions that work across the whole system. My expertise includes Node.js, JavaScript, TypeScript, and modern frameworks such as Nest.js, Vue, and React.
 				`}</p>
 				<p className='text-text-muted mb-3'>{`
-					Beyond the code, I embrace a balanced approach to life. I find solace in reading books, which deepens my understanding of life, self-awareness, and emotional intelligence. Regular jogging keeps me physically active and mentally refreshed, contributing to my overall well-being and productivity.
+					Outside of coding, I enjoy keeping life balanced. Reading helps me explore new ideas, build self-awareness, and grow emotionally. I also like to jog regularly—it keeps me active, clears my mind, and boosts both my well-being and productivity.
 				`}</p>
 				<p className='text-text-muted mb-3'>{`
-					I firmly believe that consistent, incremental improvement – even just 1% better each day – leads to remarkable growth over time. This philosophy drives my commitment to continuous learning and personal development!
+					I believe that small daily improvements lead to remarkable growth, fueling my dedication to continuous learning and personal development!
 				`}</p>
 			</React.Fragment>
 

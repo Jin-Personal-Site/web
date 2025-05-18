@@ -25,7 +25,7 @@ export default function Footer() {
 				<SocialMedia />
 			</div>
 
-			<div className='flex'>
+			<div className='flex-center'>
 				<div className={navGroup()}>
 					<p className={navGroupName()}>Portfolio</p>
 					{[

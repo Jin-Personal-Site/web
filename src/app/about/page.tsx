@@ -1,7 +1,14 @@
+import { Metadata } from 'next'
 import React from 'react'
 
+import ExperienceBackground from '@/containers/about-page/ExperienceBackground'
 import MyIntroduction from '@/containers/about-page/MyIntroduction'
 import PictureCarousel from '@/containers/about-page/PictureCarousel'
+
+export const metadata: Metadata = {
+	title: 'About me | Vinh Nguyen - Full-Stack Developer',
+	description: 'Learn more about Nguyen Quang Vinh - Software Engineer',
+}
 
 export default function Page() {
 	return (
@@ -17,8 +24,12 @@ export default function Page() {
 					</span>
 				</p>
 			</h2>
-			<PictureCarousel />
 			<MyIntroduction />
+			<PictureCarousel />
+			<ExperienceBackground />
+			<p>Github contribution</p>
+			<p>Explore section</p>
+			<p>Contact section</p>
 		</div>
 	)
 }

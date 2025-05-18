@@ -9,7 +9,7 @@ import ProjectSection from '@/containers/home-page/ProjectSection'
 import SkillSection from '@/containers/home-page/SkillSection'
 
 export const metadata: Metadata = {
-	title: 'Vinh Nguyen - Full-Stack Developer | Portfolio',
+	title: 'Portfolio | Vinh Nguyen - Full-Stack Developer',
 	description: 'Nguyen Quang Vinh - Software Engineer',
 }
 

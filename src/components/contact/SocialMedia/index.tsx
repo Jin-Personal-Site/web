@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { tv } from 'tailwind-variants'
 
@@ -5,9 +6,9 @@ import { getSocialInfo } from '@/services/getOverviewData'
 
 const socialLinks = tv({
 	slots: {
-		linkSocial: 'px-3 py-2',
+		linkSocial: 'px-3 py-2 flex-center',
 		iconSocial:
-			'transition-base text-text-base hover:text-button-primary-hover hover:drop-shadow-button-primary-hover',
+			'transition-base text-text-muted hover:text-button-primary-hover hover:drop-shadow-button-primary-hover',
 	},
 })
 
@@ -28,7 +29,16 @@ export default async function SocialMedia() {
 						className={linkSocial()}
 						title={`Open ${social.name} profile in new tab`}
 					>
-						<social.icon size={24} className={iconSocial()} />
+						{typeof social.icon === 'function' ? (
+							<social.icon size={24} className={iconSocial()} />
+						) : (
+							<Image
+								src={social.icon}
+								alt={social.name}
+								width={24}
+								height={24}
+							/>
+						)}
 					</Link>
 				)
 			})}
