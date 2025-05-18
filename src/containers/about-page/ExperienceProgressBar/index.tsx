@@ -1,7 +1,8 @@
 'use client'
 
+import { useLenis } from 'lenis/react'
 import Image from 'next/image'
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 
 import PortraitImage from '@/../public/portrait.png'
 import { classnames } from '@/libs/tailwind'
@@ -12,22 +13,15 @@ interface Props extends Stylable {}
 export default function ExperienceProgressBar({ className }: Props) {
 	const progressBarRef = useRef<HTMLDivElement>(null)
 
-	useEffect(() => {
-		const onHandleProgressBar = () => {
-			const progressBarEl = progressBarRef.current
-			if (!progressBarEl) return
+	useLenis(() => {
+		const progressBarEl = progressBarRef.current
+		if (!progressBarEl) return
 
-			const { top } = progressBarEl.getBoundingClientRect()
-			const startScrollPosition = window.innerHeight / 2
-			const progressBarHeight = Math.max(startScrollPosition - top, 0)
+		const { top } = progressBarEl.getBoundingClientRect()
+		const startScrollPosition = window.innerHeight / 2
+		const progressBarHeight = Math.max(startScrollPosition - top, 0)
 
-			progressBarEl.style.height = `${progressBarHeight}px`
-		}
-		document.addEventListener('scroll', onHandleProgressBar)
-
-		return () => {
-			document.removeEventListener('scroll', onHandleProgressBar)
-		}
+		progressBarEl.style.height = `${progressBarHeight}px`
 	})
 
 	return (
@@ -46,7 +40,7 @@ export default function ExperienceProgressBar({ className }: Props) {
 					src={PortraitImage}
 					width={20}
 					alt=''
-					className='w-6 h-7 object-top object-cover absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 z-10 max-w-none rounded-full bg-gradient-to-br from-primary/20 bg-surface-page to-primary transition-all shadow-[0_0_5px_#0006] border-[0.5px] border-primary'
+					className='w-6 h-7 object-top object-cover absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 z-10 max-w-none rounded-full bg-gradient-to-br from-primary/20 bg-surface-page to-primary transition-all duration-100 shadow-[0_0_5px_#0006] border-[0.5px] border-primary'
 				/>
 			</div>
 		</div>

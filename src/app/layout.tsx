@@ -1,3 +1,4 @@
+import { ReactLenis } from 'lenis/react'
 import { Viewport } from 'next'
 import { EB_Garamond, Lexend } from 'next/font/google'
 import React from 'react'
@@ -39,9 +40,11 @@ export default function RootLayout({
 			className={`scroll-smooth ${sansSerifFont.variable} ${serifFont.variable}`}
 		>
 			<body className='flex min-h-lvw flex-col antialiased'>
-				<Header />
-				<main className='flex-1'>{children}</main>
-				<Footer />
+				<ReactLenis root>
+					<Header />
+					<main className='flex-1'>{children}</main>
+					<Footer />
+				</ReactLenis>
 			</body>
 		</html>
 	)
