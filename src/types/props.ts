@@ -28,6 +28,10 @@ export interface Identifiable {
 	'data-testid'?: string
 }
 
+export interface Polymorphic {
+	as?: React.ElementType
+}
+
 export interface AriaProps {
 	'aria-label'?: string
 	'aria-describedby'?: string

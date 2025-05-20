@@ -1,4 +1,11 @@
 {
 	"css.customData": [".vscode/tailwind.json"],
-	"cSpell.words": ["Lexend", "Picsum", "Vitalify", "zalo"]
+	"cSpell.words": [
+		"describedby",
+		"Disableable",
+		"Lexend",
+		"Picsum",
+		"Vitalify",
+		"zalo"
+	]
 }
