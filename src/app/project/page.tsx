@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ContactSection from '@/containers/home-page/ContactSection'
+import ContactSection from '@/components/contact/GetInTouch'
 
 export default function Page() {
 	return (
