@@ -1,5 +1,6 @@
-import { ReactNode } from 'react'
-import { tv, VariantProps } from 'tailwind-variants'
+import { VariantProps, tv } from 'tailwind-variants'
+
+import { HasChildren, Stylable } from '@/types/props'
 
 export const textButtonStyles = tv({
 	base: 'transition-base text-text-base cursor-pointer font-bold select-none hover:opacity-70',
@@ -22,9 +23,7 @@ export const textButtonStyles = tv({
 
 type TextButtonVariants = VariantProps<typeof textButtonStyles>
 
-interface Props extends TextButtonVariants {
-	children: ReactNode
-	className?: string
+interface Props extends TextButtonVariants, Stylable, HasChildren {
 	onClick?: React.MouseEventHandler
 }
 

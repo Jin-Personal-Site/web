@@ -135,7 +135,17 @@ const skillSets: SkillSetItem[] = [
 export default function SkillSection() {
 	return (
 		<section id='skill' className='home-section'>
-			<h3 className='text-link mb-8 text-2xl font-bold'>My Technical Skills</h3>
+			<h2 className='mb-20 text-shadow-[0_4px_8px_#fff1,0_8px_30px_#fff4]'>
+				<p className='text-text-muted mb-2 text-center text-xs uppercase'>
+					I constantly try to improve
+				</p>
+				<p className='mb-8 text-center text-3xl font-bold'>
+					My{' '}
+					<span className='text-colorful inline-block -translate-x-0.5 font-serif text-4xl leading-12 font-bold italic'>
+						tech stack
+					</span>
+				</p>
+			</h2>
 			{skillSets.map((category) => (
 				<React.Fragment key={category.title}>
 					<h4 className='mb-4 text-xl font-bold tracking-wide'>

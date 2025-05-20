@@ -26,6 +26,11 @@
 			"key": "messenger",
 			"name": "Messenger",
 			"url": "https://www.facebook.com/nquanqvinh"
+		},
+		{
+			"key": "zalo",
+			"name": "Zalo",
+			"url": "https://www.facebook.com/nquanqvinh"
 		}
 	]
 }

@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import { twMerge } from 'tailwind-merge'
 import { TV, VariantProps } from 'tailwind-variants'
 
 export const getVariantValues = <
@@ -48,5 +49,5 @@ export type ClassDictionary = Record<string, any>
 export type ClassArray = ClassValue[]
 
 export const classnames = (...inputs: ClassValue[]): string => {
-	return clsx(...inputs)
+	return twMerge(clsx(...inputs))
 }
