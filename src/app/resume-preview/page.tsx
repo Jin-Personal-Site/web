@@ -1,5 +1,6 @@
-import PdfViewer from '@/components/common/pdf/PdfViewer'
 import { FaDownload, FaLink } from 'react-icons/fa6'
+
+import PdfViewer from '@/components/common/pdf/PdfViewer'
 
 export default function Page() {
 	const actionButtons = (

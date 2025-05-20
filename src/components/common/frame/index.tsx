@@ -1,10 +1,9 @@
-import { classnames } from '@/libs/tailwind'
 import React from 'react'
 
-interface Props {
-	children: React.ReactNode
-	className?: string
-}
+import { classnames } from '@/libs/tailwind'
+import { HasChildren, Stylable } from '@/types/props'
+
+interface Props extends Stylable, HasChildren {}
 
 export default function PictureFrame({ children, className }: Props) {
 	return (

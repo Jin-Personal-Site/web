@@ -1,5 +1,7 @@
 import React from 'react'
-import { tv, VariantProps } from 'tailwind-variants'
+import { VariantProps, tv } from 'tailwind-variants'
+
+import { AccessibleProps, HasChildren, InteractiveProps } from '@/types/props'
 
 export const buttonStyles = tv({
 	base: 'flex-center transition-base -translate-y-[4px] cursor-pointer rounded-xl border-2 font-bold select-none hover:-translate-y-[6px] active:translate-y-0 active:duration-100',
@@ -29,10 +31,12 @@ export const buttonStyles = tv({
 
 type ButtonVariants = VariantProps<typeof buttonStyles>
 
-interface Props extends ButtonVariants {
-	children: React.ReactNode
-	className?: string
-	onClick?: React.MouseEventHandler
+interface Props
+	extends ButtonVariants,
+		InteractiveProps,
+		AccessibleProps,
+		HasChildren {
+	type?: 'button' | 'submit' | 'reset'
 }
 
 export default function Button({
@@ -42,11 +46,15 @@ export default function Button({
 	children,
 	className = '',
 	onClick,
+	type = 'button',
+	...props
 }: Props) {
 	return (
 		<button
+			type={type}
 			className={buttonStyles({ color, size, disabled, class: className })}
 			onClick={onClick && !disabled ? onClick : undefined}
+			{...props}
 		>
 			{children}
 		</button>

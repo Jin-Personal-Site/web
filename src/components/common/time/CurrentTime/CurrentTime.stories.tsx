@@ -1,6 +1,7 @@
-import { Meta, StoryObj } from '@storybook/react'
-import CurrentTime from '.'
 import { datetime } from '@/libs/datetime'
+import { Meta, StoryObj } from '@storybook/react'
+
+import CurrentTime from '.'
 
 const meta: Meta<typeof CurrentTime> = {
 	title: 'Common/Time/CurrentTime',
