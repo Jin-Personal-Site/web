@@ -87,6 +87,12 @@
 		"node": ">=22"
 	},
 	"trustedDependencies": [
-		"@parcel/watcher"
+		"@parcel/watcher",
+		"@prisma/client",
+		"@prisma/engines",
+		"canvas",
+		"esbuild",
+		"prisma",
+		"sharp"
 	]
 }
