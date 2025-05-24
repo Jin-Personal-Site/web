@@ -5,7 +5,7 @@ import { twMerge } from 'tailwind-merge'
 import { tv } from 'tailwind-variants'
 
 import PictureFrame from '@/components/common/frame'
-import { Project } from '@/models/project'
+import { ProjectModel } from '@/models/project'
 
 const projectColors = tv({
 	variants: {
@@ -39,7 +39,7 @@ const projectColors = tv({
 })
 
 interface Props {
-	project: Project
+	project: ProjectModel
 }
 
 export default function ProjectListItem({ project }: Props) {

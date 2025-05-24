@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { tv } from 'tailwind-variants'
 
-import { getSocialInfo } from '@/services/getOverviewData'
+import { getSocialInfo } from '@/services/overview-info'
 
 const socialLinks = tv({
 	slots: {
