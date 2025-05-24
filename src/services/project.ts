@@ -1,6 +1,6 @@
-import { Project } from '@/models/project'
+import { ProjectModel } from '@/models/project'
 
-export const getAllProjects = async (): Promise<Project[]> => {
+export const getAllProjects = async (): Promise<ProjectModel[]> => {
 	return [
 		{
 			name: 'Beverage Store System',

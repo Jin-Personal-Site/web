@@ -1,9 +1,9 @@
 import { faker } from '@faker-js/faker'
 
-export const fakeImage = () =>
+export const fakeImage = (width = 1920, height = 1080) =>
 	faker.image.urlPicsumPhotos({
-		width: 1920,
-		height: 1080,
+		width,
+		height,
 	})
 
 export const fakeParagraph = (numberOfSentences: number) =>

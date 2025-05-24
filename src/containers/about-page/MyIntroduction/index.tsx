@@ -3,7 +3,7 @@ import React from 'react'
 
 import SocialMedia from '@/components/contact/SocialMedia'
 import { datetime } from '@/libs/datetime'
-import { getOverviewInfo } from '@/services/getOverviewData'
+import { getOverviewInfo } from '@/services/overview-info'
 
 export default async function MyIntroduction() {
 	const { startWorkingDate } = await getOverviewInfo()

@@ -1,12 +1,12 @@
 import { twMerge } from 'tailwind-merge'
 
-import { Project } from '@/models/project'
+import { ProjectModel } from '@/models/project'
 import { Polymorphic, Stylable } from '@/types/props'
 
 import ProjectListItem from '../ProjectListItem'
 
 interface Props extends Stylable, Polymorphic {
-	projects: Project[]
+	projects: ProjectModel[]
 }
 
 export default function ProjectList({

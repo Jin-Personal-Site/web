@@ -5,7 +5,7 @@ import { tv } from 'tailwind-variants'
 import BaseButton from '@/components/common/buttons/BaseButton'
 import TextButton from '@/components/common/buttons/TextButton'
 import { datetime } from '@/libs/datetime'
-import { getOverviewInfo } from '@/services/getOverviewData'
+import { getOverviewInfo } from '@/services/overview-info'
 
 export default async function HeroSection() {
 	const { startWorkingDate, completedProjects } = await getOverviewInfo()
