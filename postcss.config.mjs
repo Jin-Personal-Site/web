@@ -2,12 +2,11 @@
 const config = {
 	plugins: {
 		'@tailwindcss/postcss': {
-			// optimize: {
-			// 	minify: true,
-			// },
+			optimize: {
+				minify: true,
+			},
 		},
-		// 'postcss-nested-ancestors': {},
-		// autoprefixer: {},
+		autoprefixer: {},
 	},
 }
 

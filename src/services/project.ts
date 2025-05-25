@@ -6,11 +6,11 @@ export const getAllProjects = async (): Promise<ProjectModel[]> => {
 			name: 'Beverage Store System',
 			slug: 'beverage-store-system',
 			repoUrl: 'https://github.com/orgs/VT-Store-Manager/repositories',
-			image: '/project1.png',
+			mainImage: '/project1.png',
 			mainColor: 'orange',
 			description:
 				'Built a complete ordering system for a chain café, including customer, store, and delivery apps with real-time updates.',
-			websiteUrl: '',
+			liveDemoUrl: '',
 			techStack: [
 				'NodeJS',
 				'NestJS',
@@ -35,11 +35,11 @@ export const getAllProjects = async (): Promise<ProjectModel[]> => {
 			name: 'Horse Racing Portal',
 			slug: 'horse-racing-portal',
 			repoUrl: '',
-			image: '/project2.png',
+			mainImage: '/project2.png',
 			mainColor: 'blue',
 			description:
 				'Providing outsourcing services to renew user interface, develop new features and CMS for engaging more users, increasing business turnover and reducing monthly operating cost.',
-			websiteUrl: 'https://tospo-keiba.jp',
+			liveDemoUrl: 'https://tospo-keiba.jp',
 			techStack: [
 				'VueJS',
 				'Typescript',
@@ -55,11 +55,11 @@ export const getAllProjects = async (): Promise<ProjectModel[]> => {
 			name: 'My Portfolio',
 			slug: 'horse-racing-portal',
 			repoUrl: '',
-			image: '/project3.png',
+			mainImage: '/project3.png',
 			mainColor: 'gray',
 			description:
 				'Providing outsourcing services to renew user interface, develop new features and CMS for engaging more users, increasing business turnover and reducing monthly operating cost.',
-			websiteUrl: 'https://tospo-keiba.jp',
+			liveDemoUrl: 'https://tospo-keiba.jp',
 			techStack: [
 				'NextJS',
 				'ReactJS',
@@ -77,11 +77,11 @@ export const getAllProjects = async (): Promise<ProjectModel[]> => {
 			name: 'VKN Social Media',
 			slug: 'horse-racing-portal',
 			repoUrl: '',
-			image: '/project4.png',
+			mainImage: '/project4.png',
 			mainColor: 'pink',
 			description:
 				'Providing outsourcing services to renew user interface, develop new features and CMS for engaging more users, increasing business turnover and reducing monthly operating cost.',
-			websiteUrl: 'https://tospo-keiba.jp',
+			liveDemoUrl: 'https://tospo-keiba.jp',
 			techStack: [
 				'NextJS',
 				'ReactJS',

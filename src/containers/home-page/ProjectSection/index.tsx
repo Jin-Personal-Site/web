@@ -2,14 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
-import { FiGithub } from 'react-icons/fi'
-import { HiExternalLink } from 'react-icons/hi'
-import { RxCaretRight } from 'react-icons/rx'
 import { tv } from 'tailwind-variants'
 
 import BaseButton from '@/components/common/buttons/BaseButton'
-import TextButton from '@/components/common/buttons/TextButton'
-import PictureFrame from '@/components/common/frame'
+import PictureFrame from '@/components/common/frame/PictureFrame'
 import { classnames } from '@/libs/tailwind'
 
 type ProjectItem = {

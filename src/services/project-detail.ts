@@ -7,7 +7,7 @@ export const getProjectDetail = async (
 		projectName: 'Beverage Store System',
 		slug: 'beverage-store-system',
 		tagline: 'A complete ordering system for chain cafés.',
-		mainImage: '/project1.png',
+		mainImage: '/project1.avif',
 		mainColor: 'orange',
 		// projectType: ProjectType.SIDE_PROJECT,
 		projectType: ProjectType.EMPLOYMENT,
@@ -23,13 +23,7 @@ export const getProjectDetail = async (
 		description:
 			'Built a complete ordering system for a chain café, including customer, store, and delivery apps with real-time updates. The system handles order management, inventory tracking, and delivery coordination.',
 		content: `
-			<h2>🔹 1. Overview</h2>
-			<p><strong>Description:</strong></p>
-			<blockquote>
-				Built a unified ordering system that streamlines operations for a chain café, reducing order processing time by 60% and enabling business expansion from 5 to 15 locations.
-			</blockquote>
-
-			<h2>🔹 2. My Role & Responsibilities</h2>
+			<h2>👨‍💻 My Role & Responsibilities</h2>
 			<ul>
 				<li>Solo lead/full-stack architect</li>
 				<li>• Led the full-stack development team and designed system architecture</li>
@@ -39,7 +33,7 @@ export const getProjectDetail = async (
 				<li>• Managed deployment and DevOps processes</li>
 			</ul>
 
-			<h2>🔹 3. Challenges & Solutions</h2>
+			<h2>🎯 Challenges & Solutions</h2>
 			<table>
 				<thead>
 					<tr>
@@ -63,14 +57,14 @@ export const getProjectDetail = async (
 				</tbody>
 			</table>
 
-			<h2>🔹 4. Results & Impact</h2>
+			<h2>📈 Results & Impact</h2>
 			<ul>
 				<li><strong>Operational Efficiency:</strong> 60% faster order processing, 30% cost reduction</li>
 				<li><strong>Customer Experience:</strong> 45% improvement in satisfaction scores</li>
 				<li><strong>Business Growth:</strong> Expanded from 5 to 15 locations in first year</li>
 			</ul>
 
-			<h2>🔹 5. Technical Deep-Dive</h2>
+			<h2>🛠️ Technical Deep-Dive</h2>
 			<p><strong>Tech Stack:</strong></p>
 			<ul>
 				<li>NestJS — Microservices architecture</li>
@@ -81,18 +75,18 @@ export const getProjectDetail = async (
 				<li>AWS — Cloud infrastructure</li>
 			</ul>
 
-			<h2>🔹 6. Architecture & Artifacts</h2>
-			<img src="/project1-architecture.png" alt="System Architecture" />
+			<h2>🏗️ Architecture & Artifacts</h2>
+			<img src="https://picsum.photos/400/250" alt="System Architecture" />
 			<p><em>Microservices architecture with separate services for order management, inventory, payment processing, and delivery coordination</em></p>
 
-			<h2>🔹 7. What I Learned</h2>
+			<h2>📚 What I Learned</h2>
 			<ul>
 				<li>• Real-time system design at scale, including connection management and data consistency</li>
 				<li>• Best practices for payment gateway integration and security</li>
 				<li>• Effective team leadership and technical debt management</li>
 			</ul>
 
-			<h2>🔹 8. Links</h2>
+			<h2>🔗 Links</h2>
 			<ul>
 				<li><a href="#">🔗 Live Demo</a></li>
 				<li><a href="https://github.com/orgs/VT-Store-Manager/repositories">💻 GitHub Repo</a></li>
