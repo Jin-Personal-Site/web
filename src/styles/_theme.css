@@ -12,6 +12,7 @@
 	/* Accent colors */
 	--tw-color-primary: #4c5fd5; /* primary buttons, links, highlights */
 	--tw-color-highlight: #ffe699; /* secondary highlight color */
+	--tw-color-neutral: #1a1a1a; /* neutral color for general use */
 
 	/* Interactive elements */
 	--tw-color-button-primary: var(--tw-color-primary);
@@ -21,6 +22,13 @@
 	--tw-color-button-secondary: #e0e0e0; /* neutral button bg */
 	--tw-color-button-secondary-hover: #cccccc;
 	--tw-color-button-secondary-disabled: #f5f5f5;
+
+	--tw-color-button-neutral: var(--tw-color-neutral); /* neutral button */
+	--tw-color-button-neutral-hover: #222222;
+	--tw-color-button-neutral-disabled: #0d0d0d;
+	--tw-color-button-neutral-text: #ffffff; /* White text for dark neutral background */
+	--tw-color-button-neutral-text-hover: #ffffff;
+	--tw-color-button-neutral-text-disabled: #666666;
 
 	--tw-color-button-link: var(--tw-color-primary);
 	--tw-color-button-link-hover: #3b4fb7;
@@ -60,6 +68,7 @@
 		/* Same accent colors (may adjust brightness) */
 		--tw-color-primary: #4c5fd5;
 		--tw-color-highlight: #ffe699;
+		--tw-color-neutral: #f0f0f0;
 
 		/* Interactive elements */
 		--tw-color-button-primary: var(--tw-color-primary);
@@ -69,6 +78,13 @@
 		--tw-color-button-secondary: #333333;
 		--tw-color-button-secondary-hover: #444444;
 		--tw-color-button-secondary-disabled: #222222;
+
+		--tw-color-button-neutral: var(--tw-color-neutral);
+		--tw-color-button-neutral-hover: #e0e0e0;
+		--tw-color-button-neutral-disabled: #f5f5f5;
+		--tw-color-button-neutral-text: #0d0d0d; /* Dark text for light neutral background */
+		--tw-color-button-neutral-text-hover: #0d0d0d;
+		--tw-color-button-neutral-text-disabled: #666666;
 
 		--tw-color-button-link: var(--tw-color-primary);
 		--tw-color-button-link-hover: #5a6fe1;
@@ -143,6 +159,7 @@
 	/* Accent colors */
 	--color-primary: var(--tw-color-primary);
 	--color-highlight: var(--tw-color-highlight);
+	--color-neutral: var(--tw-color-neutral);
 
 	/* Interactive elements */
 	--color-button-primary: var(--tw-color-button-primary);
@@ -152,6 +169,15 @@
 	--color-button-secondary: var(--tw-color-button-secondary);
 	--color-button-secondary-hover: var(--tw-color-button-secondary-hover);
 	--color-button-secondary-disabled: var(--tw-color-button-secondary-disabled);
+
+	--color-button-neutral: var(--tw-color-button-neutral);
+	--color-button-neutral-hover: var(--tw-color-button-neutral-hover);
+	--color-button-neutral-disabled: var(--tw-color-button-neutral-disabled);
+	--color-button-neutral-text: var(--tw-color-button-neutral-text);
+	--color-button-neutral-text-hover: var(--tw-color-button-neutral-text-hover);
+	--color-button-neutral-text-disabled: var(
+		--tw-color-button-neutral-text-disabled
+	);
 
 	--color-button-link: var(--tw-color-button-link);
 	--color-button-link-hover: var(--tw-color-button-link-hover);

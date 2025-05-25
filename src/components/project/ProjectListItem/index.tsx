@@ -4,7 +4,7 @@ import React from 'react'
 import { twMerge } from 'tailwind-merge'
 import { tv } from 'tailwind-variants'
 
-import PictureFrame from '@/components/common/frame'
+import PictureFrame from '@/components/common/frame/PictureFrame'
 import { ProjectModel } from '@/models/project'
 
 const projectColors = tv({
@@ -53,7 +53,7 @@ export default function ProjectListItem({ project }: Props) {
 					)}
 				>
 					<Image
-						src={project.image}
+						src={project.mainImage}
 						width={270}
 						height={160}
 						placeholder='empty'

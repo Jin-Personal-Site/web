@@ -6,9 +6,16 @@ export const getProjectDetail = async (
 	return {
 		projectName: 'Beverage Store System',
 		slug: 'beverage-store-system',
-		tagline: 'A complete ordering system for chain cafés',
+		tagline: 'A complete ordering system for chain cafés.',
 		mainImage: '/project1.png',
-		projectType: ProjectType.SIDE_PROJECT,
+		mainColor: 'orange',
+		// projectType: ProjectType.SIDE_PROJECT,
+		projectType: ProjectType.EMPLOYMENT,
+		companyEmployment: {
+			name: 'Vitalify Asia',
+			icon: 'https://images.glints.com/unsafe/glints-dashboard.oss-ap-southeast-1.aliyuncs.com/company-logo/33988ae362a9a46c4ad65c85d75bfe61.png',
+			id: 1,
+		},
 		period: {
 			start: '2022/01',
 			end: '2023/12',
@@ -98,27 +105,57 @@ export const getProjectDetail = async (
 			{
 				name: 'Typescript',
 				icon: 'https://cdn.simpleicons.org/typescript/3178c6',
+				isHighlight: true,
 			},
-			{ name: 'NestJS', icon: 'https://cdn.simpleicons.org/nestjs/e0234e' },
-			{ name: 'NuxtJS', icon: 'https://cdn.simpleicons.org/nuxt/00dc82' },
-			{ name: 'MongoDB', icon: 'https://cdn.simpleicons.org/mongodb/47a248' },
+			{
+				name: 'NestJS',
+				icon: 'https://cdn.simpleicons.org/nestjs/e0234e',
+				isHighlight: true,
+			},
+			{
+				name: 'MongoDB',
+				icon: 'https://cdn.simpleicons.org/mongodb/47a248',
+				isHighlight: true,
+			},
 			{
 				name: 'Mongoose',
 				icon: 'https://cdn.simpleicons.org/mongoose/880000/a52a2a',
 			},
-			{ name: 'Redis', icon: 'https://cdn.simpleicons.org/redis/ff4438' },
+			{
+				name: 'Redis',
+				icon: 'https://cdn.simpleicons.org/redis/ff4438',
+				isHighlight: true,
+			},
+			{
+				name: 'NuxtJS',
+				icon: 'https://cdn.simpleicons.org/nuxt/00dc82',
+				isHighlight: true,
+			},
 			{
 				name: 'Socket.IO',
 				icon: 'https://cdn.simpleicons.org/socketdotio/010101/white',
+				isHighlight: true,
 			},
-			{ name: 'Pinia', icon: 'https://logo.svgcdn.com/l/pinia.png' },
-			{ name: 'SCSS', icon: 'https://cdn.simpleicons.org/sass/cc6699' },
+			{
+				name: 'Pinia',
+				icon: 'https://logo.svgcdn.com/l/pinia.png',
+				isHighlight: true,
+			},
+			{
+				name: 'SCSS',
+				icon: 'https://cdn.simpleicons.org/sass/cc6699',
+				isHighlight: true,
+			},
 			{ name: 'Vuetify', icon: 'https://cdn.simpleicons.org/vuetify/1867c0' },
 			{
 				name: 'Momo',
 				icon: 'https://cdn.brandfetch.io/idn4xaCzTm/w/180/h/180/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B',
+				isHighlight: true,
 			},
-			{ name: 'Twilio', icon: 'https://cdn.simpleicons.org/twilio/f22f46' },
+			{
+				name: 'Twilio',
+				icon: 'https://cdn.simpleicons.org/twilio/f22f46',
+			},
 			{
 				name: 'Google Map API',
 				icon: 'https://cdn.simpleicons.org/googlemaps/4285f4',

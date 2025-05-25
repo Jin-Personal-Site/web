@@ -9,7 +9,7 @@ export default async function Page() {
 	const projects = await getAllProjects()
 
 	return (
-		<div className='px-4 mt-16'>
+		<div className='mt-16 px-4'>
 			<SectionHeading
 				eyebrowText='Featured case studies'
 				headline='Curated'

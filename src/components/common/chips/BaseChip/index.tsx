@@ -10,7 +10,7 @@ export const chipStyles = tv({
 			large: 'mx-1 my-1 rounded-lg px-2 py-1 text-sm',
 		},
 		type: {
-			default: 'bg-gray-600/60 text-text-base',
+			default: 'text-text-base bg-gray-600/60',
 			outlined: '',
 			elevated: '',
 			text: '',

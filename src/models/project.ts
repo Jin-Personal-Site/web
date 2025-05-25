@@ -1,17 +1,17 @@
 import { ExternalItem, Period } from '@/types/utility'
 
+export type ProjectColor = 'orange' | 'blue' | 'gray' | 'pink'
+
 export type ProjectModel = {
 	name: string
 	slug: string
 	repoUrl?: string
-	image: string
-	mainColor: 'orange' | 'blue' | 'gray' | 'pink'
-	websiteUrl?: string
+	mainImage: string
+	mainColor: ProjectColor
+	liveDemoUrl?: string
 	description: string
 	techStack: string[]
 }
-
-export type ProjectColor = ProjectModel['mainColor']
 
 export enum ProjectType {
 	SIDE_PROJECT = 'side',
@@ -19,9 +19,11 @@ export enum ProjectType {
 	EMPLOYMENT = 'employment',
 }
 
-export type TechStack = ExternalItem
+export type TechStack = ExternalItem & {
+	isHighlight?: boolean
+}
 
-export type CompanyProjectInfo = { id: number } & ExternalItem
+export type CompanyProjectInfo = ExternalItem & { id: number }
 
 export type ProjectTypeDetail =
 	| {
@@ -37,12 +39,13 @@ export type ProjectDetailModel = {
 	slug: string
 	tagline: string
 	mainImage: string
-	techStack: ExternalItem[]
+	techStack: TechStack[]
 	period: Period
 	description: string
 	content: string // content as HTML
 	repoUrl: string
 	liveDemoUrl?: string
+	mainColor: ProjectColor
 } & ProjectTypeDetail
 
 // export type ProjectDetailModel2 = {
