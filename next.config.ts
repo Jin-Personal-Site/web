@@ -1,5 +1,7 @@
 import type { NextConfig } from 'next'
 
+import BundleAnalyzer from '@next/bundle-analyzer'
+
 const nextConfig: NextConfig = {
 	output: 'export',
 	typescript: {
@@ -26,6 +28,13 @@ const nextConfig: NextConfig = {
 		],
 		// domains: ['picsum.photos'],
 	},
+	experimental: {
+		optimizePackageImports: ['icon-library'],
+	},
 }
 
-export default nextConfig
+const withBundleAnalyzer = BundleAnalyzer({
+	enabled: process.env.ANALYZE === 'true',
+})
+
+export default withBundleAnalyzer(nextConfig)
