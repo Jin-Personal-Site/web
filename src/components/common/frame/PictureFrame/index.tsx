@@ -15,7 +15,7 @@ export default function PictureFrame({ children, className }: Props) {
 				className,
 			)}
 		>
-			<div className='bg-surface-card h-full w-full overflow-hidden rounded-2xl border-0 border-[#444]'>
+			<div className='bg-surface-card relative h-full w-full overflow-hidden rounded-2xl border-0 border-[#444]'>
 				{children}
 			</div>
 		</div>

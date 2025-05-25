@@ -4,13 +4,15 @@ import { VariantProps, tv } from 'tailwind-variants'
 import { AccessibleProps, HasChildren, InteractiveProps } from '@/types/props'
 
 export const buttonStyles = tv({
-	base: 'flex-center transition-base -translate-y-[4px] cursor-pointer rounded-xl border-2 font-bold select-none hover:-translate-y-[6px] active:translate-y-0 active:duration-100',
+	base: 'flex-center transition-base cursor-pointer rounded-xl border-2 font-bold select-none',
 	variants: {
 		color: {
 			primary:
-				'bg-button-primary hover:bg-button-primary-hover border-[#222] text-white shadow-[0_4px_0_#222] hover:shadow-[0_6px_0_#222] active:shadow-[0_0_0_#222]',
+				'bg-button-primary hover:bg-button-primary-hover border-[#222] text-white',
 			secondary:
-				'bg-button-secondary hover:bg-button-secondary-hover text-text-base border-[#222] shadow-[0_4px_0_#222] hover:shadow-[0_6px_0_#222] active:shadow-[0_0_0_#222]',
+				'bg-button-secondary hover:bg-button-secondary-hover text-text-base border-[#222]',
+			neutral:
+				'bg-button-neutral hover:bg-button-neutral-hover text-button-neutral-text border-border hover:text-button-neutral-text',
 		},
 		size: {
 			small: 'rounded-xl px-3 py-2 text-sm',
@@ -18,14 +20,38 @@ export const buttonStyles = tv({
 			large: 'rounded-2xl px-5 py-3 text-lg',
 		},
 		disabled: {
-			true: 'text-text-muted! bg-button-primary-disabled! -translate-y-[2px]! cursor-not-allowed border-[#666]! opacity-80 shadow-[0_2px_0_#666]!',
+			true: 'text-text-muted! bg-button-primary-disabled! cursor-not-allowed border-[#666]/80! opacity-80',
 			false: '',
 		},
+		variant: {
+			tactile:
+				'-translate-y-[4px] shadow-[0_4px_0_#222] hover:-translate-y-[6px] hover:shadow-[0_6px_0_#222] active:translate-y-0 active:shadow-[0_0_0_#222] active:duration-100',
+			flat: 'border-[1.5px]',
+		},
 	},
+	compoundVariants: [
+		{
+			color: 'neutral',
+			disabled: true,
+			class: 'bg-button-neutral-disabled hover:bg-button-neutral-text-disabled',
+		},
+		{
+			variant: 'tactile',
+			disabled: true,
+			class: '-translate-y-[2px] shadow-[0_2px_0_#666]',
+		},
+		{
+			variant: 'tactile',
+			color: 'neutral',
+			class:
+				'border-border shadow-[0_4px_0_var(--color-border)] hover:shadow-[0_6px_0_var(--color-border)] active:shadow-[0_0_0_var(--color-border)]',
+		},
+	],
 	defaultVariants: {
 		color: 'primary',
 		size: 'medium',
 		disabled: false,
+		variant: 'tactile',
 	},
 })
 
@@ -43,6 +69,7 @@ export default function Button({
 	color,
 	size,
 	disabled,
+	variant,
 	children,
 	className = '',
 	onClick,
@@ -52,7 +79,13 @@ export default function Button({
 	return (
 		<button
 			type={type}
-			className={buttonStyles({ color, size, disabled, class: className })}
+			className={buttonStyles({
+				color,
+				size,
+				disabled,
+				variant,
+				class: className,
+			})}
 			onClick={onClick && !disabled ? onClick : undefined}
 			{...props}
 		>

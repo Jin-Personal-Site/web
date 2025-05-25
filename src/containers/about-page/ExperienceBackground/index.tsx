@@ -137,7 +137,7 @@ export default function ExperienceBackground() {
 	const companyDescribe = (item: WorkExperienceItem) => {
 		return (
 			<React.Fragment>
-				<p className='text-text-muted uppercase text-sm'>
+				<p className='text-text-muted text-sm uppercase'>
 					{datetime.toFormat(item.period.from, 'MMM yyyy')} -{' '}
 					{item.period.toPresent
 						? 'Present'
@@ -145,7 +145,7 @@ export default function ExperienceBackground() {
 							? datetime.toFormat(item.period.to, 'MMM yyyy')
 							: ''}
 				</p>
-				<p className='font-semibold text-lg flex items-center'>
+				<p className='flex items-center text-lg font-semibold'>
 					{item.company.name}
 				</p>
 				<p className='flex items-center text-sm'>
@@ -167,10 +167,10 @@ export default function ExperienceBackground() {
 		return (
 			<div className='mt-8 ml-4 first-of-type:mt-6'>
 				<p className='font-semibold'>{positionItem.positionTitle}</p>
-				<p className='text-xs font-medium flex items-center'>
+				<p className='flex items-center text-xs font-medium'>
 					<MdOutlineCalendarMonth
 						size={13}
-						className='inline-block mr-1 -translate-y-px'
+						className='mr-1 inline-block -translate-y-px'
 					/>
 					{datetime.toFormat(positionItem.period.from, 'MMM yyyy')} -{' '}
 					{positionItem.period.toPresent
@@ -180,10 +180,10 @@ export default function ExperienceBackground() {
 							: ''}
 				</p>
 				<div className='mt-4'>
-					<p className='text-xs text-text-muted'>
+					<p className='text-text-muted text-xs'>
 						🎯 Responsibility: {positionItem.responsibility}
 					</p>
-					<div className='text-xs text-text-muted mt-4'>
+					<div className='text-text-muted mt-4 text-xs'>
 						📖 What I learned:
 						{positionItem.learnings.map((learning) => {
 							return (
@@ -193,7 +193,7 @@ export default function ExperienceBackground() {
 							)
 						})}
 					</div>
-					<div className='text-xs text-text-muted mt-3'>
+					<div className='text-text-muted mt-3 text-xs'>
 						🚀 Problems I solved:
 						{positionItem.impacts.map((impact) => {
 							return (
@@ -203,7 +203,7 @@ export default function ExperienceBackground() {
 							)
 						})}
 					</div>
-					<div className='text-xs text-text-muted mt-3'>
+					<div className='text-text-muted mt-3 text-xs'>
 						🎉 My standout strategies:
 						{positionItem.achievements.map((achievement) => {
 							return (
@@ -219,7 +219,7 @@ export default function ExperienceBackground() {
 	}
 
 	return (
-		<section className='mb-20 mt-30'>
+		<section className='mt-30 mb-20'>
 			<h2 className='mb-12 text-shadow-[0_4px_8px_#fff1,0_8px_30px_#fff4]'>
 				<p className='text-text-muted mb-1 text-center text-xs uppercase'>
 					The experience

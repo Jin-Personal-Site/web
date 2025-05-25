@@ -27,12 +27,12 @@ export default function ExperienceProgressBar({ className }: Props) {
 	return (
 		<div
 			className={classnames(
-				'absolute left-2 top-1/2 -translate-y-1/2 h-full w-2 rounded-full border-1 border-border bg-surface-card',
+				'border-border bg-surface-card absolute top-1/2 left-2 h-full w-2 -translate-y-1/2 rounded-full border-1',
 				className,
 			)}
 		>
 			<div
-				className='w-full h-0 max-h-full relative bg-gradient-to-b from-gray-700/20 via-primary via-53% to-pink-600 transition-[height] duration-50 rounded-full'
+				className='via-primary relative h-0 max-h-full w-full rounded-full bg-gradient-to-b from-gray-700/20 via-53% to-pink-600 transition-[height] duration-50'
 				ref={progressBarRef}
 			>
 				<span></span>
@@ -40,7 +40,7 @@ export default function ExperienceProgressBar({ className }: Props) {
 					src={PortraitImage}
 					width={20}
 					alt=''
-					className='w-6 h-7 object-top object-cover absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 z-10 max-w-none rounded-full bg-gradient-to-br from-primary/20 bg-surface-page to-primary transition-all duration-100 shadow-[0_0_5px_#0006] border-[0.5px] border-primary'
+					className='from-primary/20 bg-surface-page to-primary border-primary absolute bottom-0 left-1/2 z-10 h-7 w-6 max-w-none -translate-x-1/2 translate-y-1/2 rounded-full border-[0.5px] bg-gradient-to-br object-cover object-top shadow-[0_0_5px_#0006] transition-all duration-100'
 				/>
 			</div>
 		</div>

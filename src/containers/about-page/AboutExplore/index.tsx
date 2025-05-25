@@ -5,7 +5,7 @@ import BaseCard from '@/components/common/card/BaseCard'
 
 export default function AboutExplore() {
 	return (
-		<section className='mb-20 mt-30'>
+		<section className='mt-30 mb-20'>
 			<h2 className='mb-10 text-shadow-[0_4px_8px_#fff1,0_8px_30px_#fff4]'>
 				<p className='text-text-muted mb-2 text-center text-xs uppercase'>
 					Discover more

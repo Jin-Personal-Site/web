@@ -5,6 +5,7 @@
 	"scripts": {
 		"build": "next build",
 		"build-storybook": "storybook build",
+		"build:analyze": "ANALYZE=true next build",
 		"build:workers": "tsc -p tsconfig.worker.json",
 		"db:generate": "prisma generate",
 		"db:migrate": "prisma migrate dev",
@@ -20,10 +21,12 @@
 	},
 	"dependencies": {
 		"@date-fns/tz": "^1.2.0",
+		"@next/bundle-analyzer": "^15.4.0-canary.51",
 		"@prisma/client": "^6.4.1",
 		"@react-pdf-viewer/core": "3.12.0",
 		"@react-pdf-viewer/full-screen": "^3.12.0",
 		"@react-pdf-viewer/get-file": "^3.12.0",
+		"@tailwindcss/typography": "^0.5.16",
 		"clsx": "^2.1.1",
 		"date-fns": "^4.1.0",
 		"gsap": "^3.13.0",

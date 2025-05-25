@@ -2,11 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { tv } from 'tailwind-variants'
 
-import { getSocialInfo } from '@/services/getOverviewData'
+import { getSocialInfo } from '@/services/overview-info'
 
 const socialLinks = tv({
 	slots: {
-		linkSocial: 'px-3 py-2 flex-center',
+		linkSocial: 'flex-center px-3 py-2',
 		iconSocial:
 			'transition-base text-text-muted hover:text-button-primary-hover hover:drop-shadow-button-primary-hover',
 	},
