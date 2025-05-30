@@ -1,8 +1,18 @@
 {
 	"css.customData": [".vscode/tailwind.json"],
+	"tailwindCSS.classFunctions": ["tv", "clsx", "classnames", "twMerge"],
+	"tailwindCSS.classAttributes": [
+		"class",
+		"className",
+		"ngClass",
+		"class:list",
+		"slots"
+	],
+	"tailwindCSS.emmetCompletions": true,
 	"cSpell.words": [
 		"describedby",
 		"Disableable",
+		"Forwardable",
 		"Lexend",
 		"Picsum",
 		"Vitalify",

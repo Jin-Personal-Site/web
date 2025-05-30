@@ -10,11 +10,19 @@
 		"prettier-plugin-tailwindcss"
 	],
 	"tailwindAttributes": ["className"],
-	"tailwindFunctions": ["tv", "clsx", "classnames"],
+	"tailwindFunctions": ["tv", "clsx", "classnames", "twMerge"],
 	"tailwindPreserveWhitespace": true,
 	"tailwindPreserveDuplicates": true,
 	"importOrder": ["<THIRD_PARTY_MODULES>", "^@", "^[./]", "^[../]"],
 	"importOrderSeparation": true,
 	"importOrderSortSpecifiers": true,
-	"importOrderGroupNamespaceSpecifiers": true
+	"importOrderGroupNamespaceSpecifiers": true,
+	"overrides": [
+		{
+			"files": ["*.mts", "*.cts", "*.ts"],
+			"options": {
+				"parser": "babel-ts"
+			}
+		}
+	]
 }
