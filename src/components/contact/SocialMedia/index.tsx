@@ -1,8 +1,9 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { tv } from 'tailwind-variants'
 
 import { getSocialInfo } from '@/services/overview-info'
+
+import SocialIcon from '../SocialIcon'
 
 const socialLinks = tv({
 	slots: {
@@ -12,7 +13,17 @@ const socialLinks = tv({
 	},
 })
 
-export default async function SocialMedia() {
+interface Props {
+	size?: number
+	linkStyle?: string
+	iconStyle?: string
+}
+
+export default async function SocialMedia({
+	size = 24,
+	linkStyle,
+	iconStyle,
+}: Props) {
 	const socials = await getSocialInfo()
 	const { linkSocial, iconSocial } = socialLinks()
 
@@ -26,19 +37,14 @@ export default async function SocialMedia() {
 						passHref={true}
 						target='_blank'
 						aria-label={social.name}
-						className={linkSocial()}
+						className={linkSocial({ class: linkStyle })}
 						title={`Open ${social.name} profile in new tab`}
 					>
-						{typeof social.icon === 'function' ? (
-							<social.icon size={24} className={iconSocial()} />
-						) : (
-							<Image
-								src={social.icon}
-								alt={social.name}
-								width={24}
-								height={24}
-							/>
-						)}
+						<SocialIcon
+							socialKey={social.key}
+							size={size}
+							className={iconSocial({ class: iconStyle })}
+						/>
 					</Link>
 				)
 			})}

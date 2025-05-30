@@ -39,6 +39,10 @@ export interface AriaProps {
 	role?: string
 }
 
+export interface Forwardable<T = HTMLElement> {
+	ref?: React.RefObject<T>
+}
+
 // Common combination interfaces
 export interface InteractiveProps extends Stylable, Clickable, Disableable {}
 export interface AccessibleProps extends Stylable, AriaProps {}

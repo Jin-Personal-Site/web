@@ -30,7 +30,7 @@ export default function Page() {
 			<MyIntroduction />
 			<PictureCarousel />
 			<ExperienceBackground />
-			<GithubContribution />
+			<GithubContribution username='quanqvinh' />
 			<AboutExplore />
 			{/* Temporary */}
 			<ContactSection className='mt-40' />

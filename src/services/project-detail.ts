@@ -15,6 +15,7 @@ export const getProjectDetail = async (
 			name: 'Vitalify Asia',
 			icon: 'https://images.glints.com/unsafe/glints-dashboard.oss-ap-southeast-1.aliyuncs.com/company-logo/33988ae362a9a46c4ad65c85d75bfe61.png',
 			id: 1,
+			url: 'https://www.vitalify.asia/',
 		},
 		period: {
 			start: '2022/01',

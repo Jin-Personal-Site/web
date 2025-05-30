@@ -29,7 +29,7 @@ export default function CurrentTime({
 	}, [])
 
 	return (
-		<>
+		<span suppressHydrationWarning={true}>
 			{toTimeFormat(time, 'HH')}
 			<span
 				className={classnames(
@@ -42,6 +42,6 @@ export default function CurrentTime({
 				:
 			</span>
 			{toTimeFormat(time, 'mm aaa')}
-		</>
+		</span>
 	)
 }

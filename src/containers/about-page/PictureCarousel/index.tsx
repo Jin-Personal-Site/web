@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from 'react'
 import { tv } from 'tailwind-variants'
 
 import SwiperContainer from '@/components/common/container/SwiperContainer'
-import { fakeImage } from '@/libs/faker'
 
 const pictures: Array<{
 	imageUrl: string

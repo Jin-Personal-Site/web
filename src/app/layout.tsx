@@ -5,6 +5,7 @@ import React from 'react'
 
 import Footer from '@/components/layout/Footer'
 import Header from '@/components/layout/Header'
+import ThemeProvider from '@/components/providers/ThemeProvider'
 import '@/styles/global.css'
 
 export const viewport: Viewport = {
@@ -35,17 +36,42 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html
-			lang='en'
-			className={`scroll-smooth ${sansSerifFont.variable} ${serifFont.variable}`}
-		>
-			<body className='flex min-h-lvw flex-col antialiased'>
-				<ReactLenis root>
-					<Header />
-					<main className='flex-1'>{children}</main>
-					<Footer />
-				</ReactLenis>
-			</body>
-		</html>
+		<ThemeProvider>
+			<html
+				lang='en'
+				className={`scroll-smooth ${sansSerifFont.variable} ${serifFont.variable}`}
+			>
+				<head>
+					<script
+						dangerouslySetInnerHTML={{
+							__html: `
+							(function () {
+								try {
+									let theme = localStorage.getItem('theme')
+									if (!theme) {
+										theme = 'system'
+										localStorage.setItem('theme', theme)
+									}
+									const meta = document.createElement('meta')
+									meta.setAttribute('name', 'site-theme')
+									meta.setAttribute('content', theme)
+									document.getElementsByTagName('head')[0].appendChild(meta)
+								} catch (exception) {
+									console.warn('Init theme failed', exception)
+								}
+							})()
+						`,
+						}}
+					></script>
+				</head>
+				<body className='flex min-h-lvw flex-col antialiased'>
+					<ReactLenis root>
+						<Header />
+						<main className='flex-1'>{children}</main>
+						<Footer />
+					</ReactLenis>
+				</body>
+			</html>
+		</ThemeProvider>
 	)
 }
