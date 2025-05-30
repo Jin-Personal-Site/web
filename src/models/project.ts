@@ -19,11 +19,11 @@ export enum ProjectType {
 	EMPLOYMENT = 'employment',
 }
 
-export type TechStack = ExternalItem & {
+export type TechStack = ExternalItem<string> & {
 	isHighlight?: boolean
 }
 
-export type CompanyProjectInfo = ExternalItem & { id: number }
+export type CompanyProjectInfo = ExternalItem<string> & { id: number }
 
 export type ProjectTypeDetail =
 	| {

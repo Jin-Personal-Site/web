@@ -4,7 +4,11 @@ import GitHubCalendar, { Activity } from 'react-github-calendar'
 
 import './GithubContribution.css'
 
-export default function GithubContribution() {
+interface Props {
+	username: string
+}
+
+export default function GithubContribution({ username }: Props) {
 	const shownMonths = 6
 
 	const selectLastHalfYear = (contributions: Activity[]): Activity[] => {
@@ -36,7 +40,7 @@ export default function GithubContribution() {
 				</p>
 			</h2>
 			<GitHubCalendar
-				username='quanqvinh'
+				username={username}
 				transformData={selectLastHalfYear}
 				labels={{
 					totalCount: `{{count}} activities in ${shownMonths} month${shownMonths > 1 ? 's' : ''}`,

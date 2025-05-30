@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { Meta, StoryObj } from '@storybook/react'
 
 import PictureFrame from '.'
@@ -16,8 +18,8 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
 	args: {},
 	render: (args) => (
-		<PictureFrame className='h-60 w-100'>
-			<img
+		<PictureFrame className='h-60 w-100' {...args}>
+			<Image
 				src='/project.png'
 				alt=''
 				className='h-full w-full object-cover object-center shadow-[inset_0_0_10px_#ccc]'
@@ -29,7 +31,7 @@ export const Default: Story = {
 export const Pink: Story = {
 	args: {},
 	render: (args) => (
-		<PictureFrame className='h-60 w-100'>
+		<PictureFrame className='h-60 w-100' {...args}>
 			<div className='h-full w-full bg-linear-to-b from-pink-700 to-pink-950'></div>
 		</PictureFrame>
 	),
@@ -38,7 +40,7 @@ export const Pink: Story = {
 export const Orange: Story = {
 	args: {},
 	render: (args) => (
-		<PictureFrame className='h-60 w-100'>
+		<PictureFrame className='h-60 w-100' {...args}>
 			<div className='h-full w-full bg-linear-to-b from-orange-700 to-orange-950'></div>
 		</PictureFrame>
 	),
