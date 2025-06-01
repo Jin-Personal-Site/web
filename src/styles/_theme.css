@@ -122,6 +122,17 @@
 	}
 }
 
+@custom-variant dark {
+	&:where(html:has(meta[name='site-theme'][content='dark']) *) {
+		@slot;
+	}
+	@media (prefers-color-scheme: dark) {
+		&:where(html:has(meta[name='site-theme'][content='system']) *) {
+			@slot;
+		}
+	}
+}
+
 @theme inline {
 	/* Font family */
 	--font-sans: var(--font-sans, sans-serif);

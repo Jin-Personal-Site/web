@@ -6,7 +6,8 @@
 		"className",
 		"ngClass",
 		"class:list",
-		"slots"
+		"slots",
+		"slotClassName"
 	],
 	"tailwindCSS.emmetCompletions": true,
 	"cSpell.words": [
@@ -15,6 +16,7 @@
 		"Forwardable",
 		"Lexend",
 		"Picsum",
+		"Suppressable",
 		"Vitalify",
 		"zalo"
 	]

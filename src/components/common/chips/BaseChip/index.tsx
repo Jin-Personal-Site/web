@@ -1,6 +1,11 @@
 import { VariantProps, tv } from 'tailwind-variants'
 
-import { HasChildren, Stylable } from '@/types/props'
+import {
+	HasChildren,
+	InteractiveProps,
+	Stylable,
+	Suppressable,
+} from '@/types/props'
 
 export const chipStyles = tv({
 	base: 'inline-flex items-center',
@@ -36,7 +41,12 @@ export const chipStyles = tv({
 
 type ChipVariants = VariantProps<typeof chipStyles>
 
-interface Props extends ChipVariants, Stylable, HasChildren {}
+interface Props
+	extends ChipVariants,
+		Stylable,
+		HasChildren,
+		Suppressable,
+		InteractiveProps {}
 
 export default function CommonChip({
 	className,
@@ -44,6 +54,8 @@ export default function CommonChip({
 	size,
 	type,
 	rounded,
+	onClick,
+	suppressHydrationWarning,
 }: Props) {
 	return (
 		<span
@@ -53,6 +65,8 @@ export default function CommonChip({
 				rounded,
 				class: className,
 			})}
+			onClick={onClick}
+			suppressHydrationWarning={suppressHydrationWarning}
 		>
 			{children}
 		</span>
