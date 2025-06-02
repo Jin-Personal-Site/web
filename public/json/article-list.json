@@ -1,0 +1,277 @@
+[
+	{
+		"id": 1,
+		"title": "Understanding TypeScript Generics",
+		"slug": "understanding-typescript-generics",
+		"description": "A comprehensive deep dive into TypeScript generics, exploring their syntax, use cases, and practical applications in real-world development scenarios",
+		"thumbnail": "https://picsum.photos/200/100.webp?random=1",
+		"postedAt": "2025-05-30T08:00:00Z",
+		"wordCount": 2500,
+		"tags": [
+			{ "name": "TypeScript", "slug": "typescript" },
+			{ "name": "Generics", "slug": "generics" },
+			{ "name": "Programming", "slug": "programming" }
+		]
+	},
+	{
+		"id": 2,
+		"title": "React Server Components Explained",
+		"slug": "react-server-components-explained",
+		"description": "An in-depth exploration of React Server Components, their architecture, benefits, and how they're shaping the future of React development",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=2",
+		"isFeatured": true,
+		"postedAt": "2025-05-24T01:05:00Z",
+		"wordCount": 3200,
+		"tags": [
+			{ "name": "React", "slug": "react" },
+			{ "name": "Server Components", "slug": "server-components" },
+			{ "name": "Frontend", "slug": "frontend" }
+		]
+	},
+	{
+		"id": 3,
+		"title": "Building Scalable APIs with Node.js",
+		"slug": "building-scalable-apis-nodejs",
+		"description": "A detailed guide covering best practices, patterns, and strategies for creating robust, maintainable, and scalable REST APIs using Node.js",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=3",
+		"postedAt": "2024-03-13T15:45:00Z",
+		"wordCount": 2800,
+		"tags": [
+			{ "name": "Node.js", "slug": "nodejs" },
+			{ "name": "API", "slug": "api" },
+			{ "name": "Backend", "slug": "backend" },
+			{ "name": "REST", "slug": "rest" }
+		]
+	},
+	{
+		"id": 4,
+		"title": "Advanced CSS Grid Techniques",
+		"slug": "advanced-css-grid-techniques",
+		"description": "Master the art of modern CSS Grid layouts with advanced techniques, real-world examples, and practical solutions for complex web design challenges",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=4",
+		"postedAt": "2024-03-12T09:15:00Z",
+		"wordCount": 2100,
+		"tags": [
+			{ "name": "CSS", "slug": "css" },
+			{ "name": "Grid", "slug": "grid" },
+			{ "name": "Frontend", "slug": "frontend" },
+			{ "name": "Layout", "slug": "layout" }
+		]
+	},
+	{
+		"id": 5,
+		"title": "State Management in React",
+		"slug": "state-management-react",
+		"description": "A thorough comparison and analysis of different state management solutions in React applications, from Context API to Redux and beyond",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=5",
+		"isFeatured": true,
+		"postedAt": "2024-03-11T14:20:00Z",
+		"wordCount": 3500,
+		"tags": [
+			{ "name": "React", "slug": "react" },
+			{ "name": "State Management", "slug": "state-management" },
+			{ "name": "Frontend", "slug": "frontend" }
+		]
+	},
+	{
+		"id": 6,
+		"title": "Web Performance Optimization",
+		"slug": "web-performance-optimization",
+		"description": "Discover essential techniques, tools, and strategies for significantly improving website speed, performance metrics, and user experience",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=6",
+		"postedAt": "2024-03-10T11:00:00Z",
+		"wordCount": 2700,
+		"tags": [
+			{ "name": "Performance", "slug": "performance" },
+			{ "name": "Optimization", "slug": "optimization" },
+			{ "name": "Web", "slug": "web" }
+		]
+	},
+	{
+		"id": 7,
+		"title": "Docker for Developers",
+		"slug": "docker-for-developers",
+		"description": "A comprehensive practical guide to containerization with Docker, covering everything from basic concepts to advanced deployment strategies",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=7",
+		"isFeatured": true,
+		"postedAt": "2024-03-09T16:30:00Z",
+		"wordCount": 2900,
+		"tags": [
+			{ "name": "Docker", "slug": "docker" },
+			{ "name": "DevOps", "slug": "devops" },
+			{ "name": "Containers", "slug": "containers" }
+		]
+	},
+	{
+		"id": 8,
+		"title": "GraphQL vs REST",
+		"slug": "graphql-vs-rest",
+		"description": "An in-depth comparison of GraphQL and REST API architectures, exploring their strengths, weaknesses, and ideal use cases for each approach",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=8",
+		"postedAt": "2024-03-08T13:45:00Z",
+		"wordCount": 2400,
+		"tags": [
+			{ "name": "GraphQL", "slug": "graphql" },
+			{ "name": "REST", "slug": "rest" },
+			{ "name": "API", "slug": "api" },
+			{ "name": "Backend", "slug": "backend" }
+		]
+	},
+	{
+		"id": 9,
+		"title": "Testing React Applications",
+		"slug": "testing-react-applications",
+		"description": "A comprehensive guide to testing strategies in React, covering unit testing, integration testing, and end-to-end testing with practical examples",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=9",
+		"postedAt": "2024-03-07T10:15:00Z",
+		"wordCount": 3100,
+		"tags": [
+			{ "name": "React", "slug": "react" },
+			{ "name": "Testing", "slug": "testing" },
+			{ "name": "Frontend", "slug": "frontend" }
+		]
+	},
+	{
+		"id": 10,
+		"title": "Modern JavaScript Features",
+		"slug": "modern-javascript-features",
+		"description": "Explore the latest and most powerful features in JavaScript, from ES6+ syntax to advanced language capabilities and their practical applications",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=10",
+		"postedAt": "2024-03-06T09:30:00Z",
+		"wordCount": 2600,
+		"tags": [
+			{ "name": "JavaScript", "slug": "javascript" },
+			{ "name": "Programming", "slug": "programming" },
+			{ "name": "Frontend", "slug": "frontend" }
+		]
+	},
+	{
+		"id": 11,
+		"title": "CSS Architecture Patterns",
+		"slug": "css-architecture-patterns",
+		"description": "Learn best practices and proven patterns for organizing, scaling, and maintaining large-scale CSS codebases in modern web applications",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=11",
+		"postedAt": "2024-03-05T14:00:00Z",
+		"wordCount": 2300,
+		"tags": [
+			{ "name": "CSS", "slug": "css" },
+			{ "name": "Architecture", "slug": "architecture" },
+			{ "name": "Frontend", "slug": "frontend" }
+		]
+	},
+	{
+		"id": 12,
+		"title": "Microservices Architecture",
+		"slug": "microservices-architecture",
+		"description": "A comprehensive guide to designing and implementing scalable microservices systems, covering service decomposition, communication patterns, and deployment strategies",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=12",
+		"postedAt": "2024-03-04T11:45:00Z",
+		"wordCount": 3300,
+		"tags": [
+			{ "name": "Microservices", "slug": "microservices" },
+			{ "name": "Architecture", "slug": "architecture" },
+			{ "name": "Backend", "slug": "backend" }
+		]
+	},
+	{
+		"id": 13,
+		"title": "Web Security Best Practices",
+		"slug": "web-security-best-practices",
+		"description": "A detailed exploration of essential security measures for web applications, including authentication, authorization, data encryption, and protection against common vulnerabilities",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=13",
+		"postedAt": "2024-03-03T15:20:00Z",
+		"wordCount": 2800,
+		"tags": [
+			{ "name": "Security", "slug": "security" },
+			{ "name": "Web", "slug": "web" },
+			{ "name": "Best Practices", "slug": "best-practices" }
+		]
+	},
+	{
+		"id": 14,
+		"title": "Progressive Web Apps",
+		"slug": "progressive-web-apps",
+		"description": "Learn how to build modern web applications that work offline, featuring service workers, caching strategies, and responsive design for optimal user experience",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=14",
+		"postedAt": "2024-03-02T10:00:00Z",
+		"wordCount": 2500,
+		"tags": [
+			{ "name": "PWA", "slug": "pwa" },
+			{ "name": "Web", "slug": "web" },
+			{ "name": "Frontend", "slug": "frontend" }
+		]
+	},
+	{
+		"id": 15,
+		"title": "Database Design Patterns",
+		"slug": "database-design-patterns",
+		"description": "Explore common patterns and strategies for efficient database design, including normalization, indexing, and optimization techniques for various database types",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=15",
+		"postedAt": "2024-03-01T13:30:00Z",
+		"wordCount": 3000,
+		"tags": [
+			{ "name": "Database", "slug": "database" },
+			{ "name": "Design Patterns", "slug": "design-patterns" },
+			{ "name": "Backend", "slug": "backend" }
+		]
+	},
+	{
+		"id": 16,
+		"title": "CI/CD Pipeline Setup",
+		"slug": "cicd-pipeline-setup",
+		"description": "A practical guide to setting up and maintaining continuous integration and deployment pipelines, including automated testing, building, and deployment strategies",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=16",
+		"postedAt": "2024-02-29T09:45:00Z",
+		"wordCount": 2700,
+		"tags": [
+			{ "name": "CI/CD", "slug": "cicd" },
+			{ "name": "DevOps", "slug": "devops" },
+			{ "name": "Automation", "slug": "automation" }
+		]
+	},
+	{
+		"id": 17,
+		"title": "Web Accessibility",
+		"slug": "web-accessibility",
+		"description": "A comprehensive guide to making web applications accessible to everyone, covering WCAG guidelines, semantic HTML, ARIA attributes, and inclusive design principles",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=17",
+		"isFeatured": true,
+		"postedAt": "2024-02-28T14:15:00Z",
+		"wordCount": 2900,
+		"tags": [
+			{ "name": "Accessibility", "slug": "accessibility" },
+			{ "name": "Web", "slug": "web" },
+			{ "name": "Frontend", "slug": "frontend" }
+		]
+	},
+	{
+		"id": 18,
+		"title": "Cloud Architecture",
+		"slug": "cloud-architecture",
+		"description": "Learn how to design and implement scalable applications in the cloud, covering cloud service models, infrastructure as code, and distributed systems architecture",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=18",
+		"postedAt": "2024-02-27T11:30:00Z",
+		"wordCount": 3200,
+		"tags": [
+			{ "name": "Cloud", "slug": "cloud" },
+			{ "name": "Architecture", "slug": "architecture" },
+			{ "name": "Scalability", "slug": "scalability" },
+			{ "name": "DevOps", "slug": "devops" }
+		]
+	},
+	{
+		"id": 19,
+		"title": "API Documentation",
+		"slug": "api-documentation",
+		"description": "Master the art of creating clear and comprehensive API documentation, including OpenAPI specifications, interactive examples, and best practices for developer experience",
+		"thumbnail": "https://picsum.photos/400/200.webp?random=19",
+		"postedAt": "2024-02-26T16:00:00Z",
+		"wordCount": 2400,
+		"tags": [
+			{ "name": "API", "slug": "api" },
+			{ "name": "Documentation", "slug": "documentation" },
+			{ "name": "Best Practices", "slug": "best-practices" },
+			{ "name": "Backend", "slug": "backend" }
+		]
+	}
+]

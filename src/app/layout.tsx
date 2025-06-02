@@ -19,15 +19,18 @@ const sansSerifFont = Lexend({
 	subsets: ['latin', 'vietnamese'],
 	weight: ['800', '700', '600', '500', '400'],
 	variable: '--font-sans',
-	display: 'swap',
+	display: 'optional',
+	preload: true,
 })
 
 const serifFont = EB_Garamond({
 	subsets: ['latin', 'vietnamese'],
-	weight: ['800', '700', '600', '500', '400'],
+	weight: ['700'],
 	variable: '--font-serif',
 	style: ['normal', 'italic'],
-	display: 'swap',
+	display: 'optional',
+	fallback: ['system-ui', 'Arial', 'sans-serif'],
+	preload: true,
 })
 
 export default function RootLayout({
