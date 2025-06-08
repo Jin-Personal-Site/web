@@ -9,10 +9,11 @@ export type ArticleDetailModel = {
 	coverImage?: string
 	thumbnail: string
 	content: string
+	context?: ArticleContext
 	wordCount: number
 	isFeatured?: boolean
-	relatedArticles: ArticleListItemModel[]
-	nextArticle: ArticleListItemModel
+	relatedArticles: number[]
+	nextArticle?: number | null
 	tags: Tag[]
 	author: Author
 	postedAt: DateType
@@ -31,6 +32,11 @@ export type ArticleListItemModel = Pick<
 	| 'wordCount'
 	| 'tags'
 >
+
+export type ArticleContext = {
+	title: string
+	description: string
+}
 
 export type Tag = {
 	name: string

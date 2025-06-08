@@ -1,12 +1,6 @@
 import clsx from 'clsx'
 import { twMerge } from 'tailwind-merge'
-import {
-	ClassProp,
-	TV,
-	TVProps,
-	TVReturnType,
-	VariantProps,
-} from 'tailwind-variants'
+import { ClassProp, TV, TVReturnType, VariantProps } from 'tailwind-variants'
 
 export const getVariantValues = <
 	T extends Record<string, Record<string, string>>,

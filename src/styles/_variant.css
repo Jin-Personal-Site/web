@@ -1,0 +1,3 @@
+/* Custom variants and modifiers for component styling and theme variations */
+
+@custom-variant children (& > *);

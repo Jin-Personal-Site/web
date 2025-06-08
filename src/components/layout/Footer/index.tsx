@@ -68,7 +68,7 @@ export default function Footer() {
 			</div>
 			<div className='footer-bottom mt-6'>
 				<div className='bg-border/30 h-[1.5px] rounded-full'></div>
-				<p className='text-text-muted/80 mt-6 mb-4 text-sm font-medium'>
+				<p className='text-text-muted mt-6 mb-4 text-sm font-medium'>
 					Copyright © 2025 Nguyen Quang Vinh. All rights reserved.
 				</p>
 			</div>
