@@ -53,7 +53,7 @@ export default function ArticleListItem({
 
 	return (
 		<Tag className={container({ class: className })}>
-			<Link href={`/projects/${article.slug}`} aria-label={article.title}>
+			<Link href={`/articles/${article.slug}`} aria-label={article.title}>
 				<PictureFrame className={thumbnailFrame()}>
 					<Image
 						src={article.thumbnail}
@@ -66,7 +66,7 @@ export default function ArticleListItem({
 				</PictureFrame>
 			</Link>
 			<ArticlePostedTime time={article.postedAt} className={postedTime()} />
-			<Link href={`/projects/${article.slug}`} aria-label={article.title}>
+			<Link href={`/articles/${article.slug}`} aria-label={article.title}>
 				<h3 className={title()}>{article.title}</h3>
 			</Link>
 			<p className={description()}>{article.description}</p>
@@ -79,7 +79,7 @@ export default function ArticleListItem({
 					<Link
 						key={tag.slug}
 						href={{
-							pathname: '/projects',
+							pathname: '/articles',
 							query: {
 								tag: tag.slug,
 							},

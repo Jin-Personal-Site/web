@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
+@import './_variant.css';
 @import './_utility';
 @import './_theme';
 
@@ -14,6 +15,9 @@
 	*::selection {
 		background-color: var(--color-primary);
 		color: var(--color-text-base);
+	}
+	address {
+		font-style: normal;
 	}
 }
 

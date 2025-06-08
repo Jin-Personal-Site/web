@@ -11,11 +11,12 @@ export const chipStyles = tv({
 	base: 'inline-flex items-center',
 	variants: {
 		size: {
+			small: 'mx-0.5 my-0.5 rounded-sm px-1 py-0.5 text-[0.6875rem]',
 			medium: 'mx-0.5 my-0.5 rounded-md px-1.5 py-0.75 text-xs',
 			large: 'mx-1 my-1 rounded-lg px-2 py-1 text-sm',
 		},
 		type: {
-			default: 'text-text-base bg-gray-600/60',
+			default: 'text-text-base bg-gray-600/20 dark:bg-gray-600/60',
 			outlined: '',
 			elevated: '',
 			text: '',
