@@ -34,7 +34,7 @@ const navigationStyles = tv({
 		navHeading: 'text-text-muted mb-2 text-xs font-medium',
 		navItem: 'mt-3 flex items-center',
 		navItemIcon:
-			'bg-neutral/10 flex-center mr-3 h-10 w-10 rounded-lg text-xl text-white',
+			'bg-invert/10 flex-center mr-3 h-10 w-10 rounded-lg text-xl text-white',
 		navItemName: 'text-sm font-medium',
 		navItemDescription: 'text-text-muted text-xs',
 		themeGroupButtons: 'border-b-border mx-5 my-5 border-b-[0.5px] pt-1 pb-3',

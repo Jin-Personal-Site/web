@@ -19,5 +19,6 @@
 		"Suppressable",
 		"Vitalify",
 		"zalo"
-	]
+	],
+	"typescript.tsdk": "node_modules/typescript/lib"
 }
