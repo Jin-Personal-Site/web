@@ -30,9 +30,9 @@ export interface Identifiable {
 	'data-testid'?: string
 }
 
-export interface Polymorphic {
-	as?: React.ElementType
-}
+export type Polymorphic<T extends React.ElementType = React.ElementType> = {
+	as?: T
+} & Omit<React.ComponentProps<T>, 'as'>
 
 export interface AriaProps {
 	'aria-label'?: string

@@ -1,7 +1,12 @@
 import React from 'react'
 import { VariantProps, tv } from 'tailwind-variants'
 
-import { AccessibleProps, HasChildren, InteractiveProps } from '@/types/props'
+import {
+	AccessibleProps,
+	HasChildren,
+	InteractiveProps,
+	Polymorphic,
+} from '@/types/props'
 
 export const buttonStyles = tv({
 	base: 'flex-center transition-base cursor-pointer rounded-xl border-2 font-bold select-none',
@@ -11,8 +16,8 @@ export const buttonStyles = tv({
 				'bg-button-primary hover:bg-button-primary-hover border-[#222] text-white',
 			secondary:
 				'bg-button-secondary hover:bg-button-secondary-hover text-text-base border-[#222]',
-			neutral:
-				'bg-button-neutral hover:bg-button-neutral-hover text-button-neutral-text border-border hover:text-button-neutral-text',
+			invert:
+				'bg-button-invert hover:bg-button-invert-hover text-button-invert-text border-border hover:text-button-invert-text',
 		},
 		size: {
 			small: 'rounded-xl px-3 py-2 text-sm',
@@ -31,9 +36,9 @@ export const buttonStyles = tv({
 	},
 	compoundVariants: [
 		{
-			color: 'neutral',
+			color: 'invert',
 			disabled: true,
-			class: 'bg-button-neutral-disabled hover:bg-button-neutral-text-disabled',
+			class: 'bg-button-invert-disabled hover:bg-button-invert-text-disabled',
 		},
 		{
 			variant: 'tactile',
@@ -42,9 +47,15 @@ export const buttonStyles = tv({
 		},
 		{
 			variant: 'tactile',
-			color: 'neutral',
+			color: 'invert',
 			class:
-				'border-border shadow-[0_4px_0_var(--color-border)] hover:shadow-[0_6px_0_var(--color-border)] active:shadow-[0_0_0_var(--color-border)]',
+				'border-[#333] shadow-[0_4px_0_#333] hover:shadow-[0_6px_0_#333] active:shadow-[0_0_0_#333]',
+		},
+		{
+			variant: 'tactile',
+			color: 'secondary',
+			class:
+				'shadow-[0_4px_0_#222] hover:shadow-[0_6px_0_#222] active:shadow-[0_0_0_#222]',
 		},
 	],
 	defaultVariants: {
@@ -57,15 +68,13 @@ export const buttonStyles = tv({
 
 type ButtonVariants = VariantProps<typeof buttonStyles>
 
-interface Props
-	extends ButtonVariants,
-		InteractiveProps,
-		AccessibleProps,
-		HasChildren {
-	type?: 'button' | 'submit' | 'reset'
-}
+type Props<T extends React.ElementType> = ButtonVariants &
+	InteractiveProps &
+	AccessibleProps &
+	HasChildren &
+	Polymorphic<T>
 
-export default function Button({
+export default function Button<T extends React.ElementType>({
 	color,
 	size,
 	disabled,
@@ -73,12 +82,12 @@ export default function Button({
 	children,
 	className = '',
 	onClick,
-	type = 'button',
+	as: buttonTag,
 	...props
-}: Props) {
+}: Props<T>) {
+	const Tag: React.ElementType = buttonTag || 'button'
 	return (
-		<button
-			type={type}
+		<Tag
 			className={buttonStyles({
 				color,
 				size,
@@ -90,6 +99,6 @@ export default function Button({
 			{...props}
 		>
 			{children}
-		</button>
+		</Tag>
 	)
 }

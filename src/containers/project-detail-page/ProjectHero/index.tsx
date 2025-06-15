@@ -81,7 +81,7 @@ export default function ProjectHero({ project }: Props) {
 						target='_blank'
 					>
 						<BaseButton
-							color='neutral'
+							color='invert'
 							size='small'
 							variant='flat'
 							disabled={!Boolean(project.liveDemoUrl)}
