@@ -1,7 +1,8 @@
 'use client'
+
 import { useEffect, useState } from 'react'
 
-import { DateInstanceType, datetime, TZDateType } from '@/libs/datetime'
+import { DateInstanceType, TZDateType, datetime } from '@/libs/datetime'
 import { classnames } from '@/libs/tailwind'
 
 interface Props {
@@ -28,7 +29,7 @@ export default function CurrentTime({
 	}, [])
 
 	return (
-		<>
+		<span suppressHydrationWarning={true}>
 			{toTimeFormat(time, 'HH')}
 			<span
 				className={classnames(
@@ -41,6 +42,6 @@ export default function CurrentTime({
 				:
 			</span>
 			{toTimeFormat(time, 'mm aaa')}
-		</>
+		</span>
 	)
 }

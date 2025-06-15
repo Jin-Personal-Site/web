@@ -1,0 +1,75 @@
+import { VariantProps, tv } from 'tailwind-variants'
+
+import {
+	HasChildren,
+	InteractiveProps,
+	Stylable,
+	Suppressable,
+} from '@/types/props'
+
+export const chipStyles = tv({
+	base: 'inline-flex items-center',
+	variants: {
+		size: {
+			small: 'mx-0.5 my-0.5 rounded-sm px-1 py-0.5 text-[0.6875rem]',
+			medium: 'mx-0.5 my-0.5 rounded-md px-1.5 py-0.75 text-xs',
+			large: 'mx-1 my-1 rounded-lg px-2 py-1 text-sm',
+		},
+		type: {
+			default: 'text-text-base bg-gray-600/20 dark:bg-gray-600/60',
+			outlined: '',
+			elevated: '',
+			text: '',
+		},
+		rounded: {
+			true: 'rounded-full',
+			false: '',
+		},
+	},
+	compoundVariants: [
+		{
+			size: ['medium', 'large'],
+			rounded: true,
+			class: 'rounded-full',
+		},
+	],
+	defaultVariants: {
+		size: 'medium',
+		type: 'default',
+		rounded: false,
+	},
+})
+
+type ChipVariants = VariantProps<typeof chipStyles>
+
+interface Props
+	extends ChipVariants,
+		Stylable,
+		HasChildren,
+		Suppressable,
+		InteractiveProps {}
+
+export default function CommonChip({
+	className,
+	children,
+	size,
+	type,
+	rounded,
+	onClick,
+	suppressHydrationWarning,
+}: Props) {
+	return (
+		<span
+			className={chipStyles({
+				size,
+				type,
+				rounded,
+				class: className,
+			})}
+			onClick={onClick}
+			suppressHydrationWarning={suppressHydrationWarning}
+		>
+			{children}
+		</span>
+	)
+}

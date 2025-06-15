@@ -5,9 +5,24 @@
 	"useTabs": true,
 	"tabWidth": 2,
 	"jsxSingleQuote": true,
+	"plugins": [
+		"@trivago/prettier-plugin-sort-imports",
+		"prettier-plugin-tailwindcss"
+	],
 	"tailwindAttributes": ["className"],
-	"tailwindFunctions": ["tv", "clsx", "classnames"],
+	"tailwindFunctions": ["tv", "clsx", "classnames", "twMerge"],
 	"tailwindPreserveWhitespace": true,
 	"tailwindPreserveDuplicates": true,
-	"plugins": ["prettier-plugin-tailwindcss"]
+	"importOrder": ["<THIRD_PARTY_MODULES>", "^@", "^[./]", "^[../]"],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true,
+	"importOrderGroupNamespaceSpecifiers": true,
+	"overrides": [
+		{
+			"files": ["*.mts", "*.cts", "*.ts"],
+			"options": {
+				"parser": "babel-ts"
+			}
+		}
+	]
 }

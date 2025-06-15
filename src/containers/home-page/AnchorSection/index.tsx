@@ -1,16 +1,17 @@
-import Link from 'next/link'
-import { LuHeartHandshake, LuMapPinned } from 'react-icons/lu'
-import { tv } from 'tailwind-variants'
-import { PiLayoutBold } from 'react-icons/pi'
-
-import CurrentTime from '@/components/common/time/CurrentTime'
 import Image from 'next/image'
-import SampleImage from '@/../public/portrait.png'
-import TechImage from '@/../public/Development_Languages.png'
-import RemoteImage from '@/../public/half-earth.webp'
-import InProgressImage from '@/../public/chart.jpg'
+import Link from 'next/link'
 import { FaRobot } from 'react-icons/fa6'
+import { LuHeartHandshake, LuMapPinned } from 'react-icons/lu'
+import { PiLayoutBold } from 'react-icons/pi'
+import { tv } from 'tailwind-variants'
+
+import TechImage from '@/../public/Development_Languages.png'
+import InProgressImage from '@/../public/chart.jpg'
+import RemoteImage from '@/../public/half-earth.webp'
+import SampleImage from '@/../public/portrait.png'
+import CurrentTime from '@/components/common/time/CurrentTime'
 import { classnames } from '@/libs/tailwind'
+
 // import { TechSphere } from '@/components/common/canvas/TechSphere'
 
 const anchorCardStyles = tv({

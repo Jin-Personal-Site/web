@@ -32,37 +32,39 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - name: Trust all dependencies
-        run: bun pm trust --all
+      # - name: Install libs for Canvas
+      #   run: sudo apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
+
+      # - name: Trust all dependencies
+      #   run: bun pm trust --all
 
       - name: Generate Prisma schema types
         run: bun db:generate
 
-      - name: Start SSM and forward RDS to localhost:5432
-        run: |
-          aws ssm start-session \
-            --target ${{ vars.SSM_INSTANCE_ID }} \
-            --document-name AWS-StartPortForwardingSessionToRemoteHost \
-            --parameters '{"host":["${{ vars.RDS_URL }}"],"portNumber":["${{ vars.RDS_PORT }}"], "localPortNumber":["5432"]}' > ssm.log 2>&1 &
-          echo $! > ssm_pid.txt
-          # Wait for port forwarding to be established
-          sleep 5
+      # - name: Start SSM and forward RDS to localhost:5432
+      #   run: |
+      #     aws ssm start-session \
+      #       --target ${{ vars.SSM_INSTANCE_ID }} \
+      #       --document-name AWS-StartPortForwardingSessionToRemoteHost \
+      #       --parameters '{"host":["${{ vars.RDS_URL }}"],"portNumber":["${{ vars.RDS_PORT }}"], "localPortNumber":["5432"]}' > ssm.log 2>&1 &
+      #     echo $! > ssm_pid.txt
+      #     # Wait for port forwarding to be established
+      #     sleep 5
 
       - name: Build NextJS app
         env:
           DATABASE_URL: postgresql://postgres:postgres@localhost:5432/personal_site
         run: bun run build
 
-      - name: Stop SSM session
-        run: |
-          session_id=$(aws ssm describe-sessions --state Active --query "Sessions[?Target=='${{ vars.SSM_INSTANCE_ID }}'].SessionId" --output text)
-          if [ ! -z "$session_id" ]; then
-            for session in $session_id; do
-              aws ssm terminate-session --session-id "$session"
-            done
-          fi
+      # - name: Stop SSM session
+      #   run: |
+      #     session_id=$(aws ssm describe-sessions --state Active --query "Sessions[?Target=='${{ vars.SSM_INSTANCE_ID }}'].SessionId" --output text)
+      #     if [ ! -z "$session_id" ]; then
+      #       for session in $session_id; do
+      #         aws ssm terminate-session --session-id "$session"
+      #       done
+      #     fi
 
       - name: Upload built output to S3
         run: |
           aws s3 sync ./out s3://jin-personal-site/web --delete
-

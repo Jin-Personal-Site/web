@@ -1,10 +1,18 @@
-import BaseButton from '@/components/common/buttons/BaseButton'
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
+import { twMerge } from 'tailwind-merge'
 
-export default function ContactSection() {
+import BaseButton from '@/components/common/buttons/BaseButton'
+import { Stylable } from '@/types/props'
+
+interface Props extends Stylable {}
+
+export default function ContactSection({ className }: Props) {
 	return (
-		<section id='contact' className='mb-20 flex flex-col items-center px-6'>
+		<section
+			id='contact'
+			className={twMerge('mb-20 flex flex-col items-center px-6', className)}
+		>
 			<h2 className='text-text-base text-center text-2xl font-extrabold uppercase'>
 				Let’s Build Something Together
 			</h2>

@@ -1,0 +1,6 @@
+.react-activity-calendar__footer {
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 4px;
+	color: var(--tw-color-text-muted);
+}

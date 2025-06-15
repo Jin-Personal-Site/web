@@ -1,7 +1,11 @@
 import type { NextConfig } from 'next'
+import BundleAnalyzer from '@next/bundle-analyzer'
 
 const nextConfig: NextConfig = {
 	output: 'export',
+	poweredByHeader: false,
+	reactStrictMode: true,
+	trailingSlash: true,
 	typescript: {
 		tsconfigPath:
 			process.env.NODE_ENV === 'production'
@@ -22,10 +26,15 @@ const nextConfig: NextConfig = {
 				protocol: 'https',
 				hostname: 'picsum.photos',
 			},
-			// new URL('https://picsum.photos/**')
 		],
-		// domains: ['picsum.photos'],
+	},
+	experimental: {
+		optimizePackageImports: ['icon-library'],
 	},
 }
 
-export default nextConfig
+const withBundleAnalyzer = BundleAnalyzer({
+	enabled: process.env.ANALYZE === 'true',
+})
+
+export default withBundleAnalyzer(nextConfig)
