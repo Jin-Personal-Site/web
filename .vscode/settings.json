@@ -1,4 +1,24 @@
 {
 	"css.customData": [".vscode/tailwind.json"],
-	"cSpell.words": ["Lexend"]
+	"tailwindCSS.classFunctions": ["tv", "clsx", "classnames", "twMerge"],
+	"tailwindCSS.classAttributes": [
+		"class",
+		"className",
+		"ngClass",
+		"class:list",
+		"slots",
+		"slotClassName"
+	],
+	"tailwindCSS.emmetCompletions": true,
+	"cSpell.words": [
+		"describedby",
+		"Disableable",
+		"Forwardable",
+		"Lexend",
+		"Picsum",
+		"Suppressable",
+		"Vitalify",
+		"zalo"
+	],
+	"typescript.tsdk": "node_modules/typescript/lib"
 }

@@ -1,4 +1,5 @@
 import * as dateFns from 'date-fns'
+
 import { TZDate } from '@date-fns/tz'
 
 export type DateType = ConstructorParameters<DateConstructor>[0]
@@ -10,6 +11,15 @@ export type TzName = 'Asia/Ho_Chi_Minh' | 'Asia/Tokyo'
 export const datetime = {
 	toFormat(date: TZDateType, format: string): string {
 		return dateFns.format(date, format)
+	},
+	toFormatDistance(fromDate: TZDateType, toDate?: TZDateType): string {
+		if (toDate) {
+			return dateFns.formatDistance(fromDate, toDate, { addSuffix: true })
+		}
+		return dateFns.formatDistance(fromDate, this.nowAtTz(), { addSuffix: true })
+	},
+	getDiffDays(time: TZDateType): number {
+		return dateFns.differenceInHours(this.nowAtTz(), time) / 24
 	},
 	getWorkedYears(
 		startTime: TZDateType,

@@ -1,15 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { FiGithub } from 'react-icons/fi'
-import { HiExternalLink } from 'react-icons/hi'
-import { FaArrowRight } from 'react-icons/fa'
-import BaseButton from '@/components/common/buttons/BaseButton'
-import PictureFrame from '@/components/common/frame'
 import React from 'react'
+import { FaArrowRight } from 'react-icons/fa'
 import { tv } from 'tailwind-variants'
+
+import BaseButton from '@/components/common/buttons/BaseButton'
+import PictureFrame from '@/components/common/frame/PictureFrame'
 import { classnames } from '@/libs/tailwind'
-import TextButton from '@/components/common/buttons/TextButton'
-import { RxCaretRight } from 'react-icons/rx'
 
 type ProjectItem = {
 	name: string
@@ -153,12 +150,12 @@ export default function ProjectSection() {
 	return (
 		<section id='project' className='home-section'>
 			<h2 className='mb-20 text-shadow-[0_4px_8px_#fff1,0_8px_30px_#fff4]'>
-				<p className='text-text-muted mb-2 text-center text-xs uppercase'>
+				<p className='text-text-muted mb-1 text-center text-xs uppercase'>
 					Featured case studies
 				</p>
 				<p className='mb-8 text-center text-3xl font-bold'>
 					Curated{' '}
-					<span className='text-colorful inline-block -translate-x-1 font-serif text-4xl font-bold italic'>
+					<span className='text-colorful inline-block -translate-x-1 font-serif text-4xl leading-12 font-bold italic'>
 						work
 					</span>
 				</p>

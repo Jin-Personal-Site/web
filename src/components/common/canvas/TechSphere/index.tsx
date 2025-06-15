@@ -1,10 +1,11 @@
 'use client'
-import { classnames } from '@/libs/tailwind'
+
 import { useEffect, useRef } from 'react'
 
-interface Props {
-	className?: string
-}
+import { classnames } from '@/libs/tailwind'
+import { Stylable } from '@/types/props'
+
+interface Props extends Stylable {}
 
 export function TechSphere({ className }: Props) {
 	const canvasRef = useRef<HTMLCanvasElement>(null)
