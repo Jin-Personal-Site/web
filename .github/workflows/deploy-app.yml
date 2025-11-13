@@ -1,4 +1,6 @@
 name: Deploy NextJS with SSM and RDS
+permissions:
+  contents: read
 
 on:
   workflow_dispatch:
